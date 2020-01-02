@@ -1,0 +1,87 @@
+#!/bin/bash
+
+# Author : Anand Kulkarni. 
+# Date : 01/01/2020 : Started building the package mon utility to pull packages and deploy them as much as possible without any end user interaction and ease of use.
+# Identify if there is root user who is running this.
+
+# Import library functions here.
+. ${PWD}/pkgMonLib
+
+# validate running user.
+isRoot=$(isUserRoot)
+if [ "$isRoot" = "no" ]; then
+	echo -e "user is not root.This installation will not continue.To proceed package installation run PackageMon as root.Exiting with failure..."
+	exit 1
+else
+	echo -e "user is verified as root.proceeding further.."
+fi
+
+# Validate the layout.txt exists. This is the master map of all installation tools and the approach to installing them.
+# First we will get the current folder path as script may be run from either same place or invoked from another folder.
+export monDir=$(dirname $0)
+if [ "$monDir" != "." ]; then
+	cd $monDir
+fi
+
+# Setup some folders specific to installer so that we can track package cache and the install logs.
+mkdir -p /tmp/pkgmon/cache/ /var/log/pkgmon/
+
+# Identify if there is layout file present in $monDir path. Else quit. We cant proceed until layout file is available.
+if [ ! -f ${monDir}/layout.txt ]; then
+	echo -e "Failed to identify layout config file at path ${monDir}.Exiting with failure..."
+	exit 1
+fi
+
+# Validate the file layout passed. If it does not have 5 specific columns seperated by pipe. Then simply quit with error.
+# There will be unexpected issues/errors if the layout is not properly maintained.
+isLayoutValid=$(cat ${monDir}/layout.txt|awk -F"|" '{print NF}'|sort|uniq|wc -l)
+if [ "$isLayoutValid" != "1" ]; then
+	echo -e "The layout.txt is corrupt and it needs to be validated.All rows of the file must have five pipe seperated values. please verify."
+	echo -e "Exiting with failure..."
+	exit 1
+fi
+
+# Now the real validation of input arguments starts. We can pass an "all" switch. This simply installs all category by category.
+# Otherwise we can install all [category name] or we can install all [category-name] [pipe seperated package names ].
+
+if [ "$#" = "0" ]; then
+	echo -e "Please refer to proper usage of the runPackageMon.sh script. Exiting with failure..."
+	showUsage
+	exit 1
+fi
+
+if [ "$#" = "1" -a "$1" != "all" ]; then
+	echo -e "If single paramter is passed to script. It must be 'all' since all categories are to be installed.Exiting with failure..."
+	showUsage
+	exit 1
+fi
+
+if [ "$#" = "2" -a "$1" != "all" ]; then
+	echo -e "If two paramters are passed. First must be all and second must be a valid installation category."
+	showUsage
+	exit 1
+fi
+
+if [ "$#" = "2" ]; then
+	isValidCategory=$(isValidCategory $2)
+	if [ "$isValidCategory" != "yes" ]; then
+		echo -e "The category passed $2 is not valid. Please validate for case sensitivity and ensure it is one of the recommended categories.Exiting with failure.."
+		showUsage
+		exit 1
+	fi
+fi
+
+# Assume at this stage that parameters passed are 2 only. Code this piece out working first. then consider optimal design of all cases including the third.
+# Third case : $0 [all] [category] [specificPipeSeperatedPackageList]
+
+export categoryName=$2
+while IFS= read -r line
+do
+  pkgName=$(echo $line|awk -F'|' '{print $1}')
+	if [ "$pkgName" != "PKGNAME" ]; then
+		autoSwitch=$(echo $line|awk -F'|' '{print $3}')
+		installType=$(echo $line|awk -F'|' '{print $4}')
+		runDnfInstall $pkgName $autoSwitch $installType 
+	fi
+done < "$monDir/layout.txt"
+

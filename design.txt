@@ -1,0 +1,22 @@
+- The package management structure will be kept in git in corrosponding folder if fedora release : fc{version}.
+- The package layout will be having below structure.
+  pkgname|pkgcategory|installType|pkgdescription
+
+- installType indicates if the install is regular which case dnf update pkgname will be sufficient. In case installation is custom then a specific script will be needed to trigger the installation.
+  This script will be located in fc{version}/scripts/pkgname.custom.sh. This script will be applied as root [ only all the time ], installation done will logged to /var/log/dnfupd/ folder 
+  seperately for each application.
+- Installation is also possible via pkgcategory. Ex:- install [editors] will pick all editors from the master layout file. Then check each of them and run install based on their installType parameter.
+- Categories need to be minimal : langs, db, products, tools, multimedia, wine and games.
+- Third party products will be categorized under products : ex:- solace, middleware, rabbitMQ etc.
+
+- problems to solve are installing wine packages without interactive msi click->next window pop up. i.e automate back end.
+- different types of installs possible install/group install/debuginfo install/ etc handle this flexibly.
+- derivation of install is based on three parameters : ${tool}=dnf, ${installTypeParam}=install/group install/debuginfo install, autoProceed=[yY]/[nN]
+
+- Had to run the article below for setting menu permanently in gnome-terminal.
+	- install dconfig-editor
+	- https://www.reddit.com/r/gnome/comments/bhgkzx/can_i_enable_the_menubar_in_terminal_by_default/
+	- gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
+
+- enumerations : standard i.e simple/s, group install/g, debuginfo install/d and custom/c
+
