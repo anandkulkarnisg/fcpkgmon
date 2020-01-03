@@ -5,3 +5,86 @@ steam|games|Y|c|Linux gaming engine/app for professional players.
 supertux|games|Y|s|SuperTux Karting Racer Game.
 ktuberling|games|Y|s|Make Nice pictures for Kids.
 chromium-bsu|games|Y|s|Intergalactic shooting spaceship game!
+@xfce-desktop|tools|Y|s|
+@kde-desktop|tools|Y|s|
+xpdf|tools|Y|s|
+qbittorrent|tools|Y|s|
+terminator|tools|Y|s|
+gnome-tweak-tool|tools|Y|s|
+lsb|tools|Y|s|
+libXScrnSaver|tools|Y|s|
+liberation-fonts|tools|Y|s|
+libappindicator-gtk3|tools|Y|s|
+atk.i686|tools|Y|s|
+pangox-compat|tools|Y|s|
+pangox-compat.i686|tools|Y|s|
+gdk-pixbuf2.i686|tools|Y|s|
+gtk2.i686|tools|Y|s|
+libidn.i686|tools|Y|s|
+libXt.i686|tools|Y|s|
+gdk-pixbuf2-xlib|tools|Y|s|
+gdk-pixbuf2-xlib.i686|tools|Y|s|
+mesa-libGLU|tools|Y|s|
+mesa-libGLU.i686|tools|Y|s|
+libcanberra-gtk2.i686|tools|Y|s| 
+adwaita-gtk2-theme.i686|tools|Y|s| 
+PackageKit-gtk3-module.i686|tools|Y|s|
+pdfmod|tools|Y|s|
+flash-plugin|tools|Y|c|Adobe Flash plugin for Linux/video/browsers.
+dosbox|tools|Y|s|
+livecd-tools|tools|Y|s|
+liveusb-creator|tools|Y|s|
+glade|tools|Y|s|
+glade3|tools|Y|s|
+pygtk2-libglade|tools|Y|s|
+switchdesk|tools|Y|s|
+switchdesk-gui|tools|Y|s|
+alien|tools|Y|s|
+tilix|tools|Y|s|
+xterm|tools|Y|s|
+yakuake|tools|Y|s|
+lilyterm|tools|Y|s|
+chromium|tools|Y|s|
+shellinabox|tools|Y|s|
+roxterm|tools|Y|s|
+gftp|tools|Y|s|
+mediawiki|tools|Y|s|
+bison|tools|Y|s|
+mariadb|tools|Y|s|
+mailcap|tools|Y|s|
+mysql-server|tools|Y|s|
+mysql|tools|Y|s|
+php-mysqlnd|tools|Y|s|
+mod_ssl|tools|Y|s|
+spotify|tools|Y|c|Spotify Linux Music Client.
+pidgin|tools|Y|s|
+VirtualBox-6.0|tools|Y|c|Virtual Box open source alternative for VMWare virtualization machines.
+@development-tools|tools|Y|s|
+kernel-devel kernel-headers dkms qt5-qtx11extras  elfutils-libelf-devel zlib-devel|tools|Y|s|
+keepassx|tools|Y|s|
+sugar-stopwatch|tools|Y|s|
+pan|tools|Y|s|
+p7zip|tools|Y|s|
+pdfshuffler|tools|Y|s|
+shutter|tools|Y|s|
+filezilla|tools|Y|s|
+gparted|tools|Y|s|
+menulibre|tools|Y|s|
+hplip xsane sane|tools|Y|s|
+hplip|tools|Y|s|
+PyQt5 PyQt4|tools|Y|s|
+hplip-gui|tools|Y|s|
+python-qt4|tools|Y|s|
+python-qt5|tools|Y|s|
+chrome-gnome-shell|tools|Y|s|
+seahorse|tools|Y|s|
+pv|tools|Y|s|
+dropbox|tools|Y|c|
+smartmontools|tools|Y|s|
+k3b|tools|Y|s|
+vinagre|tools|Y|s|
+setroubleshoot|tools|Y|s|
+calibre|tools|Y|s|
+blivet-gui|tools|Y|s|
+dislocker|tools|Y|s|
+sysstat|tools|Y|s|

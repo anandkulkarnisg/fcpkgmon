@@ -24,7 +24,9 @@ if [ "$monDir" != "." ]; then
 fi
 
 # Setup some folders specific to installer so that we can track package cache and the install logs.
-mkdir -p /tmp/pkgmon/cache/ /var/log/pkgmon/
+export pkgMonCache=/tmp/pkgmon/cache
+export pkgMonLog=/var/log/pkgmon/
+mkdir -p ${pkgMonCache} ${pkgMonLog}
 
 # Identify if there is layout file present in $monDir path. Else quit. We cant proceed until layout file is available.
 if [ ! -f ${monDir}/layout.txt ]; then
