@@ -15,6 +15,8 @@ lsb|tools|Y|s|
 libXScrnSaver|tools|Y|s|
 liberation-fonts|tools|Y|s|
 libappindicator-gtk3|tools|Y|s|
+google-chrome|tools|Y|c|Google Chrome browser for Linux workstation.
+adobe-pdf-reader|tools|Y|c|Adobe acrobat reader for Linux Workstation.
 atk.i686|tools|Y|s|
 pangox-compat|tools|Y|s|
 pangox-compat.i686|tools|Y|s|
@@ -60,7 +62,12 @@ spotify|tools|Y|c|Spotify Linux Music Client.
 pidgin|tools|Y|s|
 VirtualBox-6.0|tools|Y|c|Virtual Box open source alternative for VMWare virtualization machines.
 @development-tools|tools|Y|s|
-kernel-devel kernel-headers dkms qt5-qtx11extras  elfutils-libelf-devel zlib-devel|tools|Y|s|
+kernel-devel|tools|Y|s|
+kernel-headers|tools|Y|s|
+dkms|tools|Y|s|
+qt5-qtx11extras|tools|Y|s|
+elfutils-libelf-devel|tools|Y|s|
+zlib-devel|tools|Y|s|
 keepassx|tools|Y|s|
 sugar-stopwatch|tools|Y|s|
 pan|tools|Y|s|
@@ -69,7 +76,10 @@ pdfshuffler|tools|Y|s|
 shutter|tools|Y|s|
 filezilla|tools|Y|s|
 gparted|tools|Y|s|
+aescrypt|tools|Y|c|AES Encryption command line tool for Linux.
 menulibre|tools|Y|s|
+docker-ce|tools|Y|c|Docker Container Manager for Fedora Linux Workstation.
+geogebra|tools|Y|c|Geogebra Study Tool for Linux.
 hplip xsane sane|tools|Y|s|
 hplip|tools|Y|s|
 PyQt5 PyQt4|tools|Y|s|
@@ -82,6 +92,7 @@ pv|tools|Y|s|
 dropbox|tools|Y|c|
 smartmontools|tools|Y|s|
 k3b|tools|Y|s|
+ExpanDrive|tools|Y|c|ExpanDrive Cloud Drive Mounting software.
 vinagre|tools|Y|s|
 setroubleshoot|tools|Y|s|
 calibre|tools|Y|s|
