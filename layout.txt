@@ -99,3 +99,19 @@ calibre|tools|Y|s|
 blivet-gui|tools|Y|s|
 dislocker|tools|Y|s|
 sysstat|tools|Y|s|
+valgrind|tools|Y|s|
+valgrind.i686|tools|Y|s|
+svn|tools|Y|s|
+mod_dav_svn|tools|Y|s|
+git|tools|Y|s|
+rlwrap|tools|Y|s|
+strace|tools|Y|s|
+gitg|tools|Y|s|
+gradle|tools|Y|s|
+ElectricFence|tools|Y|s|
+scons|tools|Y|s|
+vim|tools|Y|s|
+gvim|tools|Y|s|
+emacs|tools|Y|s|
+sublime-text-editor|tools|Y|c|SubLime Text Editor for Fedora Linux Workstation
+atom-ide-editor|tools|Y|c|Atom Linux IDE editor. Powerful ide for developers.
