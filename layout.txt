@@ -115,3 +115,34 @@ gvim|tools|Y|s|
 emacs|tools|Y|s|
 sublime-text-editor|tools|Y|c|SubLime Text Editor for Fedora Linux Workstation
 atom-ide-editor|tools|Y|c|Atom Linux IDE editor. Powerful ide for developers.
+brasero|multimedia|Y|s|brasero for cd/dvd buring.
+rpmfusion|multimedia|Y|c|RPM Fusion repositories for additional third party mutimedia codecs etc.
+mplayer|multimedia|Y|s|mplayer for Linux. A video player.
+mencoder|multimedia|Y|s|encoder for music and file processing format.
+xmms-skins|multimedia|Y|c|xmms mp3 player different skins for the player look.
+youtube-dl|multimedia|Y|s|Youtube video downloading software using python.
+openssl|multimedia|Y|s|openssl required for encryption and decryption development using aes.
+compat-openssl10|multimedia|Y|s|compatlib latest for openssl.Backward compatibility.
+xmms|multimedia|Y|s|xmms multimedia and mp3 player.
+xmms-ui|multimedia|Y|s|xmms gui component.
+xmms-skins|multimedia|Y|c|xmms skins customized for feel and look.
+gstreamer|multimedia|Y|s|audio, video and plugins extra.
+gstreamer-plugins-base|multimedia|Y|s|audio, video, plugins base.
+gimp|tools|Y|s|gimp [ GNU Image Manipulation program ]
+libguestfs-tools|tools|Y|s|Install the tools for mounting cow2 file format [ required for solace testing ].
+vlc|multimedia|Y|s|vlc media player.
+avidemux|multimedia|Y|s|The video and audio multiplexer.
+simple-scan|multimedia|Y|s|Simple Scan Utility
+simplescreenrecorder|multimedia|Y|s|Video recording utility for screen.
+ffmpeg|multimedia|Y|s|The ffmpeg package coversion package, translator and encoder.
+xine|multimedia|Y|s|Additional video players for Linux.
+mplayer|multimedia|Y|s|The mplayer for Linux.
+mplayer-gui|multimedia|Y|s|The mplayer GUI client.
+mplayer-skins|multimedia|Y|c|The mplayer skins for look and feel.
+bluejeans|multimedia|Y|c|bluejeans video/audio conferencing rpm required for facebook interview.
+pavucontrol|multimedia|Y|s|Install pulse and audio control fine grained.
+skype|multimedia|Y|c|Skype for Linux.First Install dependencies.
+tuxpaint|multimedia|Y|s|Tux Paint installation.
+gstreamer1-libav|multimedia|Y|s|Multi Media codecs.
+pulseaudio-equalizer|multimedia|Y|c|Install the pulseaudio equalizer[https://www.fosslinux.com/1584/how-to-install-pulse-audio-equalizer-in-fedora-25.htm/]
+gstreamer-extra-plugins|multimedia|Y|c|Install the additional codecs and required propritetary packages.
