@@ -44,7 +44,7 @@ function runDnfInstall()
 				bash ${PWD}/custom/${1}.sh
       else
         if [ "$3" = "d" ]; then
-          INSTALLTYPE="debuginfo install"
+          INSTALLTYPE="debuginfo-install"
         fi
       fi
     fi

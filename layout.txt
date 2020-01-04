@@ -146,3 +146,32 @@ tuxpaint|multimedia|Y|s|Tux Paint installation.
 gstreamer1-libav|multimedia|Y|s|Multi Media codecs.
 pulseaudio-equalizer|multimedia|Y|c|Install the pulseaudio equalizer[https://www.fosslinux.com/1584/how-to-install-pulse-audio-equalizer-in-fedora-25.htm/]
 gstreamer-extra-plugins|multimedia|Y|c|Install the additional codecs and required propritetary packages.
+gcc-c++|langs|Y|s|
+glibc-devel.i686|langs|Y|s|
+libgcc.i686|langs|Y|s|
+libstdc++.i686|langs|Y|s|
+eclipse|langs|Y|s|
+pam-devel|langs|Y|s|
+pam-devel.i686|langs|Y|s|
+openssl-devel|langs|Y|s|
+openssl-devel.i686|langs|Y|s|
+java-1.8.0-openjdk-devel|langs|Y|s|
+openssl-libs.i686|langs|Y|s| 
+zlib|langs|Y|s|
+zlib.i686|langs|Y|s|
+openssl-libs|langs|Y|s|
+boost|langs|Y|s|
+boost-devel|langs|Y|s|
+R|langs|Y|s|
+julia|langs|Y|s|
+scala|langs|Y|s|
+icedtea-web|langs|Y|s|
+codeblocks|langs|Y|s|
+rlwrap|langs|Y|s|
+rstudio|langs|Y|c|
+ksh|langs|Y|s|
+ddd|langs|Y|s|
+gsoap|langs|Y|s|
+libgcc|langs|Y|s|
+libstdc++|langs|Y|s|
+nodejs|langs|Y|s|
