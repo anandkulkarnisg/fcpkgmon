@@ -1,0 +1,9 @@
+
+- manual steps checklist for upgrade.
+
+1. create accounts for anand, deepti and dhruv.
+2. create and/or import settings of bashrc for all account from git/bb repository.
+3. enable terminal settings with menubar by default for all 3 users.
+4. vimrc settings for tab set it to 2 -> enable default pointing alias for all accounts to common area in bitbucket.
+5. 
+

@@ -5,16 +5,16 @@ steam|games|Y|c|Linux gaming engine/app for professional players.
 supertux|games|Y|s|SuperTux Karting Racer Game.
 ktuberling|games|Y|s|Make Nice pictures for Kids.
 chromium-bsu|games|Y|s|Intergalactic shooting spaceship game!
-@xfce-desktop|tools|Y|s|
-@kde-desktop|tools|Y|s|
-xpdf|tools|Y|s|
-qbittorrent|tools|Y|s|
-terminator|tools|Y|s|
-gnome-tweak-tool|tools|Y|s|
-lsb|tools|Y|s|
-libXScrnSaver|tools|Y|s|
-liberation-fonts|tools|Y|s|
-libappindicator-gtk3|tools|Y|s|
+@xfce-desktop|tools|Y|s|xfce lightweight desktop for fedora.
+@kde-desktop|tools|Y|s|kdb desktop, an alternative to gnome desktop.
+xpdf|tools|Y|s|An opensource pdf reader alternative.
+qbittorrent|tools|Y|s|A bit torrent client for linux.
+terminator|tools|Y|s|A powerful linux terminal client.
+gnome-tweak-tool|tools|Y|s|gnome desktop settings tweak tool.
+lsb|tools|Y|s|required by chrome browser for Linux.
+libXScrnSaver|tools|Y|s|required by chrome browser for Linux
+liberation-fonts|tools|Y|s|required by chrome browser for Linux
+libappindicator-gtk3|tools|Y|s|required by chrome browser for Linux
 google-chrome|tools|Y|c|Google Chrome browser for Linux workstation.
 adobe-pdf-reader|tools|Y|c|Adobe acrobat reader for Linux Workstation.
 atk.i686|tools|Y|s|
@@ -62,7 +62,6 @@ spotify|tools|Y|c|Spotify Linux Music Client.
 pidgin|tools|Y|s|
 virtualbox-6.0|tools|Y|c|Virtual Box open source alternative for VMWare virtualization machines.
 @development-tools|tools|Y|s|
-kernel-devel|tools|Y|s|
 kernel-headers|tools|Y|s|
 dkms|tools|Y|s|
 qt5-qtx11extras|tools|Y|s|
@@ -95,24 +94,23 @@ k3b|tools|Y|s|
 expandrive|tools|Y|c|ExpanDrive Cloud Drive Mounting software.
 vinagre|tools|Y|s|
 setroubleshoot|tools|Y|s|
-calibre|tools|Y|s|
-blivet-gui|tools|Y|s|
-dislocker|tools|Y|s|
-sysstat|tools|Y|s|
-valgrind|tools|Y|s|
-valgrind.i686|tools|Y|s|
-svn|tools|Y|s|
-mod_dav_svn|tools|Y|s|
-git|tools|Y|s|
-rlwrap|tools|Y|s|
-strace|tools|Y|s|
-gitg|tools|Y|s|
-gradle|tools|Y|s|
-ElectricFence|tools|Y|s|
-scons|tools|Y|s|
-vim|tools|Y|s|
-gvim|tools|Y|s|
-emacs|tools|Y|s|
+calibre|tools|Y|s|open source book reader for Linux.
+blivet-gui|tools|Y|s|very useful gui for dealing with lvm encrypted and lvm volumes.
+dislocker|tools|Y|s|unlocking lvm encrypted volumes in Linux.
+sysstat|tools|Y|s|Very useful for monitoring Linux cpu core load and other stats in real time.
+valgrind|tools|Y|s|Memory detection tool for c,cpp development.
+valgrind.i686|tools|Y|s|memory leakage detection tools for c,cpp programs, x86 compatible.
+svn|tools|Y|s|subversion client for Linux.
+mod_dav_svn|tools|Y|s|Required for apache based web servers.
+git|tools|Y|s|git client for software development over git repository.
+strace|tools|Y|s|Very useful tool for tracing system calls on running processes.
+gitg|tools|Y|s|A graphical user interface for git client.
+gradle|tools|Y|s|build tool for java development projects.
+ElectricFence|tools|Y|s|Memory leakage detection in c,c++ binaries.
+scons|tools|Y|s|Python related documentation processing tool.
+vim|tools|Y|s|enhanced vi, vim editor for Linux.
+gvim|tools|Y|s|gui vi tool for development.
+emacs|tools|Y|s|emacs text editor for Linux.
 sublime-text-editor|tools|Y|c|SubLime Text Editor for Fedora Linux Workstation
 atom-ide-editor|tools|Y|c|Atom Linux IDE editor. Powerful ide for developers.
 brasero|multimedia|Y|s|brasero for cd/dvd buring.
@@ -146,35 +144,35 @@ tuxpaint|multimedia|Y|s|Tux Paint installation.
 gstreamer1-libav|multimedia|Y|s|Multi Media codecs.
 pulseaudio-equalizer|multimedia|Y|c|Install the pulseaudio equalizer[https://www.fosslinux.com/1584/how-to-install-pulse-audio-equalizer-in-fedora-25.htm/]
 gstreamer-extra-plugins|multimedia|Y|c|Install the additional codecs and required propritetary packages.
-gcc-c++|langs|Y|s|
-glibc-devel.i686|langs|Y|s|
-libgcc.i686|langs|Y|s|
-libstdc++.i686|langs|Y|s|
-eclipse|langs|Y|s|
-pam-devel|langs|Y|s|
-pam-devel.i686|langs|Y|s|
-openssl-devel|langs|Y|s|
-openssl-devel.i686|langs|Y|s|
-java-1.8.0-openjdk-devel|langs|Y|s|
-openssl-libs.i686|langs|Y|s| 
-zlib|langs|Y|s|
-zlib.i686|langs|Y|s|
-openssl-libs|langs|Y|s|
-boost|langs|Y|s|
-boost-devel|langs|Y|s|
-R|langs|Y|s|
-julia|langs|Y|s|
-scala|langs|Y|s|
-icedtea-web|langs|Y|s|
-codeblocks|langs|Y|s|
-rlwrap|langs|Y|s|
-rstudio|langs|Y|c|
-ksh|langs|Y|s|
-ddd|langs|Y|s|
-gsoap|langs|Y|s|
-libgcc|langs|Y|s|
-libstdc++|langs|Y|s|
-nodejs|langs|Y|s|
+gcc-c++|langs|Y|s|g++ cpp compiler suite for Linux.
+glibc-devel.i686|langs|Y|s|c library for development x86 32 bit.
+libgcc.i686|langs|Y|s|gcc libraries for x86 32 bit arch.
+libstdc++.i686|langs|Y|s|c++ std library for x86 32 bit arch.
+eclipse|langs|Y|s|eclipse for fedora. It is not working in fc31
+pam-devel|langs|Y|s|pluggable authentication module.
+pam-devel.i686|langs|Y|s|pluggable authentication module development.
+openssl-devel|langs|Y|s|openssl based development libraries for debug.
+openssl-devel.i686|langs|Y|s|openssl development debug Library.
+java-1.8.0-openjdk-devel|langs|Y|s|open source java jvm implementation.
+openssl-libs.i686|langs|Y|s|openssl library 32 bit compatiable. 
+zlib|langs|Y|s|zlib compression utility.
+zlib.i686|langs|Y|s|zlib utility compression tool x32 compatiable library.
+openssl-libs|langs|Y|s|openssl libraries for encryption support.
+boost|langs|Y|s|boost cpp libraries.
+boost-devel|langs|Y|s|cpp boost development support and debug libraries.
+R|langs|Y|s|R statistical programming language.
+julia|langs|Y|s|Julia programming language.
+scala|langs|Y|s|scala programming language.
+icedtea-web|langs|Y|s|java plugin required for firefox browser in Linux.
+codeblocks|langs|Y|s|Open Source Alternative for c,cpp development ide.
+rlwrap|langs|Y|s|A very useful tool to remember commandline history for Linux terminal clients.
+rstudio|langs|Y|c|R Studio for Linux.
+ksh|langs|Y|s|korn shell for Linux.
+ddd|langs|Y|s|display data debugger, open source alternative for gui based debugging.
+gsoap|langs|Y|s|gsoap interface for c,cpp network programming.
+libgcc|langs|Y|s|gcc c library implementation.
+libstdc++|langs|Y|s|std c++ library for Linux.
+nodejs|langs|Y|s|nodejs development env for Linux.
 kernel-devel|langs|Y|s|Kernel development module required for vmware workstation and few other apps.
 gdb|langs|Y|d|debuginfo rpm package for debugger in gdb
 monodevelop|langs|Y|s|.NET development on Linux.
