@@ -60,7 +60,7 @@ php-mysqlnd|tools|Y|s|
 mod_ssl|tools|Y|s|
 spotify|tools|Y|c|Spotify Linux Music Client.
 pidgin|tools|Y|s|
-VirtualBox-6.0|tools|Y|c|Virtual Box open source alternative for VMWare virtualization machines.
+virtualbox-6.0|tools|Y|c|Virtual Box open source alternative for VMWare virtualization machines.
 @development-tools|tools|Y|s|
 kernel-devel|tools|Y|s|
 kernel-headers|tools|Y|s|
@@ -92,7 +92,7 @@ pv|tools|Y|s|
 dropbox|tools|Y|c|
 smartmontools|tools|Y|s|
 k3b|tools|Y|s|
-ExpanDrive|tools|Y|c|ExpanDrive Cloud Drive Mounting software.
+expandrive|tools|Y|c|ExpanDrive Cloud Drive Mounting software.
 vinagre|tools|Y|s|
 setroubleshoot|tools|Y|s|
 calibre|tools|Y|s|
@@ -175,3 +175,29 @@ gsoap|langs|Y|s|
 libgcc|langs|Y|s|
 libstdc++|langs|Y|s|
 nodejs|langs|Y|s|
+kernel-devel|langs|Y|s|Kernel development module required for vmware workstation and few other apps.
+gdb|langs|Y|d|debuginfo rpm package for debugger in gdb
+monodevelop|langs|Y|s|.NET development on Linux.
+python-devel|langs|Y|s|Python development libraries for debugging.
+python3-tkinter|langs|Y|s|Python TK development interface.
+devtools|langs|Y|c|C,C++ Development tool suite for Linux.
+pipcustom|langs|Y|c|Python commonly used packages for ML learning.
+libtool|langs|Y|s|Install the libtool required for building the aescrypt tool.
+poco-devel|langs|Y|s|# Install the Poco devel libraries for C++ poco development. [ Ex:- Required for cyclic barrier development ].
+log4cpp|langs|Y|s|log4cpp for building applications with proper logging.
+log4cpp-devel|langs|Y|s|log4cpp devel package for debugging issues in core logging library.
+xerces-c|langs|Y|s|xerces-c for c++ xml based library development.
+xerces-c-devel|langs|Y|s|xerces-c for library deugging and development.
+libxml|langs|Y|s|xml c/c++ development library.
+libxml-devel|langs|Y|s|xml c/c++ development library.
+libxml2|langs|Y|s|xml c/c++ development library.
+libxml2-devel|langs|Y|s|xml c/c++ development library.
+libxml++|langs|Y|s|xml c/c++ development library.
+tinyxml|langs|Y|s|Install tinyXML support for C++ development.
+protobuf|langs|Y|s|google protobuf for message serilization development.
+protobuf-devel|langs|Y|s|google protobuf for message serilization development library debugging.
+cmake3|langs|Y|s|install the cmake development packages.
+python-virtualenv|langs|Y|s|# Install python virtual env management rpm.
+libnsl.i686|langs|Y|s|Required for the 32 bit kdb/q binary.
+clang|langs|Y|s|Install the clang compiler support.
+java-openjdk|langs|Y|s|Install openjdk jvm implementation.

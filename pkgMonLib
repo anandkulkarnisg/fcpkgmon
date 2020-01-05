@@ -54,7 +54,7 @@ function runDnfInstall()
 
 	if [ "$3" != "c" ]; then
 		baseCommand=$(echo $baseCommand | sed "s/INSTALLTYPE/${INSTALLTYPE}/g" | sed "s/-n//g")
-		#echo -e "Command is : " $baseCommand
+		echo -e "Command is : " $baseCommand
 	  eval $baseCommand
 	fi
 }
