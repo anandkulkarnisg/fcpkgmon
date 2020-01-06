@@ -71,7 +71,9 @@ keepassx|tools|Y|s|keep passwords safe using this tool.aes encryption.
 sugar-stopwatch|tools|Y|s|stopwatch utility for Linux.
 pan|tools|Y|s|open source news reader.
 p7zip|tools|Y|s|p7zip format for better compression.
+python3-PyPDF2|tools|Y|s|predependency module for pdf shuffler.
 pdfshuffler|tools|Y|s|shuffle, merge and modify pdf files.
+pdfarranger|tools|Y|s|Better tool for pdf handle,merge,cut,paste [ replacing pdfshuffler : https://bugzilla.redhat.com/show_bug.cgi?id=1648514 ]
 shutter|tools|Y|s|screenshot for kde.
 filezilla|tools|Y|s|downloading utility similar to gFTP.
 gparted|tools|Y|s|Manage hard drive partitions.
