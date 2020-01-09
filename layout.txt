@@ -2,6 +2,7 @@ PKGNAME|PKGCATEGORY|AUTOSWITCH|INSTALLTYPE|PKGDESCRIPTION
 kblocks|games|Y|s|kblocks tetris style game.
 tuxpaint|games|Y|s|Tux paint game for kids.
 steam|games|Y|c|Linux gaming engine/app for professional players.
+pinball|games|Y|s|The Emilia Pinball project is an open source pinball simulator for linux
 supertux|games|Y|s|SuperTux Karting Racer Game.
 ktuberling|games|Y|s|Make Nice pictures for Kids.
 chromium-bsu|games|Y|s|Intergalactic shooting spaceship game!
