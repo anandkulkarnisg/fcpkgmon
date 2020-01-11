@@ -79,11 +79,14 @@ fi
 export categoryName=$2
 while IFS= read -r line
 do
-  pkgName=$(echo $line|awk -F'|' '{print $1}')
-	if [ "$pkgName" != "PKGNAME" ]; then
-		autoSwitch=$(echo $line|awk -F'|' '{print $3}')
-		installType=$(echo $line|awk -F'|' '{print $4}')
-		runDnfInstall $pkgName $autoSwitch $installType 
+	cnt=$(echo $line|grep -v ^#|wc -l) / Ability to add comment lines and ignore them in processing.
+	if [ "$cnt" != "0" ]; then
+	  pkgName=$(echo $line|awk -F'|' '{print $1}')
+			if [ "$pkgName" != "PKGNAME" ]; then
+					autoSwitch=$(echo $line|awk -F'|' '{print $3}')
+					installType=$(echo $line|awk -F'|' '{print $4}')
+					runDnfInstall $pkgName $autoSwitch $installType 
+			fi
 	fi
 done < "$monDir/layout.txt"
 
