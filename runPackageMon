@@ -79,7 +79,7 @@ fi
 export categoryName=$2
 while IFS= read -r line
 do
-	cnt=$(echo $line|grep -v ^#|wc -l) / Ability to add comment lines and ignore them in processing.
+	cnt=$(echo $line|grep -v ^#|wc -l) #Ability to add comment lines and ignore them in processing.
 	if [ "$cnt" != "0" ]; then
 	  pkgName=$(echo $line|awk -F'|' '{print $1}')
 			if [ "$pkgName" != "PKGNAME" ]; then
