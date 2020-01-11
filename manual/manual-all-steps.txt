@@ -5,5 +5,31 @@
 2. create and/or import settings of bashrc for all account from git/bb repository.
 3. enable terminal settings with menubar by default for all 3 users.
 4. vimrc settings for tab set it to 2 -> enable default pointing alias for all accounts to common area in bitbucket.
-5. 
+5. enable bashrc and user bashrc for all 3 accounts.
+6. set the wallpaper from fedora bit bucket repository.
+7. automate git and bitbucket repository setup for authentication.
+8. automate pulling and populating the git and bitbucket repositories.This needs tools repository to be populated manually.
+9. automate adding the NoteEdit and Noteview tools via menulibre and tools.
+10.automate customrun.sh from root account [ move this to bitbucket and point alias there ].Ensure windows is mounted properly as required.
+11.setup kdb+ , kdb+ client, kxdeveloper, tiddlyDesktop icons and packages. 
+12.Move the default folder in $HOME to localrepo pointed aliases on windows for the moment.
+13.cleanup aliases and remove dependency on windows completely.
+14.create /var/log/dnfupd/ folder for package installations logs.
+15.create installers for third party software like squirrel,.NET core,oracle,sybase,san hana,etc.
+16. The /opt has below in fedora 28.
+[anand@ldnpsr2937 manual]$ls -lrt /opt/
+total 48
+drwxr-xr-x.  3 root  root  4096 May  2  2019 google
+drwx--x--x.  4 root  root  4096 May  2  2019 containerd
+drwxr-xr-x.  3 root  root  4096 May  2  2019 squirrel
+drwxr-xr-x.  5 root  root  4096 May  3  2019 bluejeans
+drwxr-xr-x.  3 root  root  4096 May  4  2019 netbeans
+drwxr-xr-x.  5 root  root  4096 May  4  2019 jetbrains
+drwxr-xr-x. 20 root  root  4096 Jun 27  2019 zoom
+drwxr-xr-x.  3 anand anand 4096 Jun 27  2019 continuum
+drwxr-xr-x.  4 root  root  4096 Oct  3 21:07 sublime_text
+drwxr-xr-x.  3 root  root  4096 Dec 15 10:46 TiddlyDesktop
+drwxr-xr-x. 10 root  root  4096 Dec 15 13:34 kxdeveloper
+drwxr-xr-x.  7 root  root  4096 Dec 21 16:45 ExpanDrive
+[anand@ldnpsr2937 manual]$
 
