@@ -1,0 +1,59 @@
+
+1.gradle - build tool - https://www.phoronix.com/forums/forum/software/distributions/1128018-fedora-workstation-31-should-be-another-fantastic-release-for-desktop-linux/page2 - > removed from repository.
+
+2.aws S3 type machine too slow - atom installation took close to 1.5 hrs out of which mostly spent downloading package at 30kbps :(
+root@localhost fedoraPackageMon]# ./runPackageMon all tools
+user is verified as root.proceeding further..
+--2020-01-04 13:59:50--  https://github.com/atom/atom/releases/download/v1.42.0/atom.x86_64.rpm
+Resolving github.com (github.com)... 13.250.177.223
+Connecting to github.com (github.com)|13.250.177.223|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/3228505/348ec480-1e75-11ea-81bf-900205a486f5?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200104T055950Z&X-Amz-Expires=300&X-Amz-Signature=03c7cea4de0a3e2e5c5a550e665de855843503e8446f1a02cde9bb0987a50045&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Datom.x86_64.rpm&response-content-type=application%2Foctet-stream [following]
+--2020-01-04 13:59:50--  https://github-production-release-asset-2e65be.s3.amazonaws.com/3228505/348ec480-1e75-11ea-81bf-900205a486f5?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200104T055950Z&X-Amz-Expires=300&X-Amz-Signature=03c7cea4de0a3e2e5c5a550e665de855843503e8446f1a02cde9bb0987a50045&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Datom.x86_64.rpm&response-content-type=application%2Foctet-stream
+Resolving github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)... 52.216.81.8
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.216.81.8|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 169799846 (162M) [application/octet-stream]
+Saving to: ‘/tmp/pkgmon/cache/atom.rpm’
+
+/tmp/pkgmon/cache/atom.rpm                                  100%[=========================================================================================================================================>] 161.93M  21.5KB/s    in 1h 48m  
+
+2020-01-04 15:48:48 (25.4 KB/s) - ‘/tmp/pkgmon/cache/atom.rpm’ saved [169799846/169799846]
+
+Last metadata expiration check: 2:04:24 ago on Sat 04 Jan 2020 01:44:26 PM.
+Dependencies resolved.
+==============================================================================================================================================================================================================================================
+ Package                                              Architecture                                           Version                                                       Repository                                                    Size
+==============================================================================================================================================================================================================================================
+Installing:
+ atom                                                 x86_64                                                 1.42.0-0.1                                                    @commandline                                                 162 M
+
+Transaction Summary
+==============================================================================================================================================================================================================================================
+Install  1 Package
+
+Total size: 162 M
+Installed size: 563 M
+Downloading Packages:
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                                                                                                                                                      1/1 
+  Installing       : atom-1.42.0-0.1.x86_64                                                                                                                                                                                               1/1 
+  Running scriptlet: atom-1.42.0-0.1.x86_64                                                                                                                                                                                               1/1 
+  Verifying        : atom-1.42.0-0.1.x86_64                                                                                                                                                                                               1/1 
+
+Installed:
+  atom-1.42.0-0.1.x86_64                                                                                                                                                                                                                      
+
+Complete!
+[root@localhost fedoraPackageMon]# 
+
+https://flight-manual.atom.io/getting-started/sections/installing-atom/ [ improved atom installation steps here via repo package ]
+
+3. Eclipse Installation on fedora 31.
+4. Netbeans IDE.
+
+
