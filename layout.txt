@@ -203,3 +203,10 @@ python-virtualenv|langs|Y|s|# Install python virtual env management rpm.
 libnsl.i686|langs|Y|s|Required for the 32 bit kdb/q binary.
 clang|langs|Y|s|Install the clang compiler support.
 java-openjdk|langs|Y|s|Install openjdk jvm implementation.
+wine|wine|Y|s|running windows applications on Linux using Wine interface.
+notepadplusplus|wine|Y|c|notepad++ tool for Linux.
+wintextpad|wine|Y|c|TextPad utility for windows software.
+winmerge|wine|Y|c|TextPad utility for windows software.
+rarlinux|wine|Y|c|winrar linux command line utility software.
+#winrarui|wine|Y|c|winrar linux gui software. # This is disabled due to failure to install and crash.
+rufus|wine|Y|c|Rufus useful utility for creating the bootable linux key for emergency purpose.
