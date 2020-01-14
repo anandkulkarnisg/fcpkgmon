@@ -73,6 +73,29 @@ if [ "$#" = "2" ]; then
 	fi
 fi
 
+if [ "$#" = "3" ]; then
+	isValidCategory=$(isValidCategory $2)
+	  if [ "$isValidCategory" != "yes" ]; then
+		  echo -e "The category passed $2 is not valid. Please validate for case sensitivity and ensure it is one of the recommended categories.Exiting with failure.."
+			showUsage
+	    exit 1
+		fi
+	pkgNameList=$(echo $3|tr "|" " ")
+fi
+
+if [ "${pkgNameList}" != "" ]; then
+	export layOutFile="/tmp/pkgmon/cache/customlayout.txt"
+	echo -e "Building a custom layout package from given package names"
+	head -1 ${monDir}/layout.txt > ${layOutFile} # Adding the header for the custom layout file.
+	for pkgItem in ${pkgNameList}
+	do
+		grep "${pkgItem}" ${monDir}/layout.txt | grep "|${2}|" >> ${layOutFile}
+	done
+else
+	export layOutFile="${monDir}/layout.txt"
+fi
+
+
 # Assume at this stage that parameters passed are 2 only. Code this piece out working first. then consider optimal design of all cases including the third.
 # Third case : $0 [all] [category] [specificPipeSeperatedPackageList]
 
@@ -88,5 +111,7 @@ do
 					runDnfInstall $pkgName $autoSwitch $installType 
 			fi
 	fi
-done < "$monDir/layout.txt"
+done < ${layOutFile}
 
+# Exit gracefully.
+exit 0
