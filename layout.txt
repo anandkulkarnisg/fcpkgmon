@@ -210,3 +210,7 @@ winmerge|wine|Y|c|TextPad utility for windows software.
 rarlinux|wine|Y|c|winrar linux command line utility software.
 #winrarui|wine|Y|c|winrar linux gui software. # This is disabled due to failure to install and crash.
 rufus|wine|Y|c|Rufus useful utility for creating the bootable linux key for emergency purpose.
+ide-clion|tools|Y|c|jetbrains c++ ide editor.
+ide-intellij|tools|Y|c|jetbrains java ide editor.
+pycharm|tools|Y|c|jetbrains python professional development ide.
+dotnet-microsoft|tools|Y|c|Microsoft .NET run time sdk and other deve packages.
