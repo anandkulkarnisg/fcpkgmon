@@ -214,3 +214,4 @@ ide-clion|tools|Y|c|jetbrains c++ ide editor.
 ide-intellij|tools|Y|c|jetbrains java ide editor.
 pycharm|tools|Y|c|jetbrains python professional development ide.
 dotnet-microsoft|tools|Y|c|Microsoft .NET run time sdk and other deve packages.
+vscode-microsoft|tools|Y|c|microsoft visual code for development ide.
