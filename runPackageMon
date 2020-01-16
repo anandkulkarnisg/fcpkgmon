@@ -16,6 +16,9 @@ else
 	echo -e "user is verified as root.proceeding further.."
 fi
 
+# Add any run time config variables here.
+export exitCleanUp="true"
+
 # Validate the layout.txt exists. This is the master map of all installation tools and the approach to installing them.
 # First we will get the current folder path as script may be run from either same place or invoked from another folder.
 export monDir=$(dirname $0)
@@ -112,6 +115,11 @@ do
 			fi
 	fi
 done < ${layOutFile}
+
+# Run the cleanup before exit.
+if [ "${exitCleanUp}" = "true" ]; then
+	rm -f ${pkgMonCache}/*
+fi
 
 # Exit gracefully.
 exit 0

@@ -216,3 +216,5 @@ pycharm|tools|Y|c|jetbrains python professional development ide.
 dotnet-microsoft|tools|Y|c|Microsoft .NET run time sdk and other deve packages.
 vscode-microsoft|tools|Y|c|microsoft visual code for development ide.
 vmware-workstation-prod|tools|Y|c|vmware workstation pro 15.5 installer for linux.Manage vm machine images.
+kate|tools|Y|s|kdb text editor.
+golang|langs|Y|s|go language for development.
