@@ -26,10 +26,10 @@ export exitCleanUp="true"
 
 # Validate the layout.txt exists. This is the master map of all installation tools and the approach to installing them.
 # First we will get the current folder path as script may be run from either same place or invoked from another folder.
-export monDir=$(dirname $0)
-if [ "$monDir" != "." ]; then
-	cd $monDir
-fi
+export monDir="/etc"
+#if [ "$monDir" != "." ]; then
+#	cd $monDir
+#fi
 
 # Setup some folders specific to installer so that we can track package cache and the install logs.
 export pkgMonCache=/tmp/pkgmon/cache
