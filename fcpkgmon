@@ -24,7 +24,7 @@ fi
 # Add any run time config variables here.
 export exitCleanUp="true"
 
-# Validate the layout.txt exists. This is the master map of all installation tools and the approach to installing them.
+# Validate the pkgmonList.txt exists. This is the master map of all installation tools and the approach to installing them.
 # First we will get the current folder path as script may be run from either same place or invoked from another folder.
 export monDir="/etc"
 #if [ "$monDir" != "." ]; then
@@ -37,7 +37,7 @@ export pkgMonLog=/var/log/pkgmon/
 mkdir -p ${pkgMonCache} ${pkgMonLog}
 
 # Identify if there is layout file present in $monDir path. Else quit. We cant proceed until layout file is available.
-if [ ! -f ${monDir}/layout.txt ]; then
+if [ ! -f ${monDir}/pkgmonList.txt ]; then
 	echo -e "Failed to identify layout config file at path ${monDir}.Exiting with failure..."
 	exit 1
 fi
@@ -45,9 +45,9 @@ fi
 # Validate the file layout passed. If it does not have 5 specific columns seperated by pipe. Then simply quit with error.
 # There will be unexpected issues/errors if the layout is not properly maintained.
 
-isLayoutValid=$(cat ${monDir}/layout.txt|awk -F"|" '{print NF}'|sort|uniq|wc -l)
+isLayoutValid=$(cat ${monDir}/pkgmonList.txt|awk -F"|" '{print NF}'|sort|uniq|wc -l)
 if [ "$isLayoutValid" != "1" ]; then
-	echo -e "The layout.txt is corrupt and it needs to be validated.All rows of the file must have five pipe seperated values. please verify."
+	echo -e "The pkgmonList.txt is corrupt and it needs to be validated.All rows of the file must have five pipe seperated values. please verify."
 	echo -e "Exiting with failure..."
 	exit 1
 fi
@@ -93,21 +93,21 @@ if [ $# -eq 3 ]; then
 fi
 
 # Initialize the layout file as below to a default state. Modify as per switches.
-export layOutFile="${pkgMonCache}/customlayout.txt"
+export layOutFile="${pkgMonCache}/custompkgmonList.txt"
 export categoryName=$2
 
 if [ "${pkgNameList}" != "" ]; then
 	echo -e "Building a custom layout package from given package names at : ${layOutFile}"
-	head -1 ${monDir}/layout.txt > ${layOutFile} # Adding the header for the custom layout file.
+	head -1 ${monDir}/pkgmonList.txt > ${layOutFile} # Adding the header for the custom layout file.
 	for pkgItem in ${pkgNameList}
 	do
-		grep "${pkgItem}" ${monDir}/layout.txt | grep "|${2}|" >> ${layOutFile}
+		grep "${pkgItem}" ${monDir}/pkgmonList.txt | grep "|${2}|" >> ${layOutFile}
 	done
 else
 	if [ "${categoryName}" = "" ]; then
-		export layOutFile="${monDir}/layout.txt"
+		export layOutFile="${monDir}/pkgmonList.txt"
 	else
-		grep "|${categoryName}|" ${monDir}/layout.txt >> ${layOutFile}
+		grep "|${categoryName}|" ${monDir}/pkgmonList.txt >> ${layOutFile}
 	fi
 fi
 
