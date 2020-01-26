@@ -13,8 +13,8 @@ function isUserRoot()
 
 function showUsage()
 {
-  echo -e "Usage : runPackageMon.sh [all] [category] [pipe seperated one/more package names.]"
-  echo -e "Valid category names : games/wine/multimedia/tools/products/langs/db."
+  echo -e "Usage : runPackageMon.sh [all(M)] [category(O)] [pipe seperated one/more package names.(O)]"
+  echo -e "Valid category names currently supported: games/wine/multimedia/tools/products/langs/db."
 }
 
 function isValidCategory()
@@ -41,7 +41,7 @@ function runDnfInstall()
       INSTALLTYPE="group install"
     else
       if [ "$3" = "c" ]; then
-				bash ${PWD}/custom/${1}.sh
+				bash /opt/fcpkgmon/custom/${1}.sh
       else
         if [ "$3" = "d" ]; then
           INSTALLTYPE="debuginfo-install"

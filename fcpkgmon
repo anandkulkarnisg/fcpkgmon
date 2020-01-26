@@ -4,8 +4,13 @@
 # Date : 01/01/2020 : Started building the package mon utility to pull packages and deploy them as much as possible without any end user interaction and ease of use.
 # Identify if there is root user who is running this.
 
-# Import library functions here.
-. ${PWD}/pkgMonLib
+# Import library functions here.Identify if it exists.If not simply exit with error.
+if [ ! -f /usr/local/lib/fcpkgmonlib.sh ]; then
+	echo -e "Fatal Error : The library fcpkgmonlib.sh was not found at /usr/local/lib path.Exiting with failure..."
+	exit 1
+else
+	. /usr/local/lib/fcpkgmonlib.sh
+fi 
 
 # validate running user.
 isRoot=$(isUserRoot)
