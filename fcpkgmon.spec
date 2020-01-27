@@ -4,29 +4,29 @@
 
 Summary:Fedora Package Mon is a tool for personalized installation of packages.Its built on top of dnf installer.
 Name:fcpkgmon
-Version:1.0
+Version:1.0.0
 Release:2
 License:GPL
 Group:Application/misc
-URL:www.github.com/anandkulkarnisg/fedoraPackageMon
+URL:www.github.com/anandkulkarnisg/fcpkgmon
 Distribution:Fedora Linux 31
 Vendor:Anand Kulkarni
 Packager:Anand Kulkarni
-BuildArch: noarch
+BuildArch:noarch
 
 %description
 This is RPM Package for fedora custom package management tool.Its a wrapper around the dnf installer.It has additional custom installation script support.
 
 %prep
-rm -rf $RPM_BUILD_DIR/fcpkgmon-1.0
-tar -xzvf $RPM_BUILD_DIR/fcpkgmon-1.0.tar.gz
+rm -rf $RPM_BUILD_DIR/fcpkgmon
+tar -xzvf $RPM_BUILD_DIR/fcpkgmon.tar.gz
 
 %build
-cd fcpkgmon-1.0
+cd fcpkgmon
 make clean 
 
 %install
-cd fcpkgmon-1.0
+cd fcpkgmon
 make install
 mkdir -p %{buildroot}/usr/local/lib %{buildroot}/usr/local/bin %{buildroot}/etc %{buildroot}/opt/fcpkgmon/
 cp /usr/local/bin/fcpkgmon %{buildroot}/usr/local/bin
@@ -74,3 +74,4 @@ cp -R /opt/fcpkgmon/custom %{buildroot}/opt/fcpkgmon
 /opt/fcpkgmon/custom/virtualbox-6.0.sh
 /opt/fcpkgmon/custom/sublime-text-editor.sh
 /opt/fcpkgmon/custom/steam.sh
+/opt/fcpkgmon/custom/set.sh
