@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 # Article Ref : 
 # Install geogebra for study.
 sudo rpm --import https://static.geogebra.org/linux/office@geogebra.org.gpg.key

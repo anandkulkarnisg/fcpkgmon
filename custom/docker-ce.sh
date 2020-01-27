@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 # Article Ref : https://linuxconfig.org/how-to-install-docker-on-fedora-31
 dnf config-manager --add-repo=https://download.docker.com/linux/fedora/docker-ce.repo
 dnf install -y docker-ce

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 # Author : Anand Kulkarni : 02/01/2020 : Adding all the functions as seperate libraries.These can then be debugged indepdently and imported reducing main execution file size.
 
 function isUserRoot()

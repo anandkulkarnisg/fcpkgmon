@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 # todo : implement this later.
 # Ref Url  : https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html
 # Synopsis : The script simply initializes the installation of vmware workstation pro software and completes the install.

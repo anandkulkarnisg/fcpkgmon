@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 # Ref Url : https://code.visualstudio.com/docs/setup/linux
 # Installation script does not have a .repo file at the source url. The repo is manually initialized.
 

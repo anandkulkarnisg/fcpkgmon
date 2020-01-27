@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # Author : Anand Kulkarni. 
 # Date : 01/01/2020 : Started building the package mon utility to pull packages and deploy them as much as possible without any end user interaction and ease of use.
@@ -129,7 +129,9 @@ done < ${layOutFile}
 
 # Run the cleanup before exit.
 if [ "${exitCleanUp}" = "true" ]; then
-	rm -f ${pkgMonCache}/*
+  find ${pkgMonCache} -type f | xargs rm -f  
+  find ${pkgMonCache} -type d | xargs rm -rf  
+  mkdir -p ${pkgMonCache}
 fi
 
 # Exit gracefully.

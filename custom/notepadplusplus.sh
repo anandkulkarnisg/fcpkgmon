@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 if [ "${pkgMonCache}" = "" ]; then
 	export pkgMonCache="/tmp/pkgmon/cache"
