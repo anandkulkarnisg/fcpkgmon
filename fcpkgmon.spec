@@ -5,7 +5,7 @@
 Summary:Fedora Package Mon is a tool for personalized installation of packages.Its built on top of dnf installer.
 Name:fcpkgmon
 Version:1.0
-Release:1
+Release:2
 License:GPL
 Group:Application/misc
 URL:www.github.com/anandkulkarnisg/fedoraPackageMon
