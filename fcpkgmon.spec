@@ -32,11 +32,13 @@ mkdir -p %{buildroot}/usr/local/lib %{buildroot}/usr/local/bin %{buildroot}/etc 
 cp /usr/local/bin/fcpkgmon %{buildroot}/usr/local/bin
 cp /usr/local/lib/fcpkgmonlib.sh %{buildroot}/usr/local/lib
 cp /etc/pkgmonList.txt %{buildroot}/etc
+cp /etc/fcpkgmon.conf %{buildroot}/etc
 cp -R /opt/fcpkgmon/custom %{buildroot}/opt/fcpkgmon
 
 %files
 /usr/local/bin/fcpkgmon
 /etc/pkgmonList.txt
+/etc/fcpkgmon.conf
 /usr/local/lib/fcpkgmonlib.sh
 /opt/fcpkgmon/custom/opera-linux-browser.sh
 /opt/fcpkgmon/custom/expandrive.sh

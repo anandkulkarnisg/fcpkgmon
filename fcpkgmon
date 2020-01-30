@@ -4,40 +4,55 @@
 # Date : 01/01/2020 : Started building the package mon utility to pull packages and deploy them as much as possible without any end user interaction and ease of use.
 # Identify if there is root user who is running this.
 
+function setupInitialConfig()
+{
+
+export configFile="/etc/fcpkgmon.conf"
+
+if [ ! -f ${configFile} ]; then
+	echo -e "Fatal Error : The ${configFile} is not found.Cant proceed without it.Check Installation was proper\n"
+	echo -e "Exiting with error"
+	exit 1
+fi
+
+while IFS= read -r line
+do
+  if [ ! "${line:0:1}" = "#" ]; then
+    keyItem=$(echo $line|awk -F":" '{print $1}')
+    valueItem=$(echo $line|awk -F":" '{print $2}')
+    eval "export ${keyItem}=${valueItem}"
+  fi
+done <${configFile}
+}
+
+# Invoke the critical config setup function.
+setupInitialConfig
+
 # Import library functions here.Identify if it exists.If not simply exit with error.
-if [ ! -f /usr/local/lib/fcpkgmonlib.sh ]; then
-	echo -e "Fatal Error : The library fcpkgmonlib.sh was not found at /usr/local/lib path.Exiting with failure..."
+if [ ! -f ${pkgMonLibPath}/${pkgMonLib} ]; then
+	echo -e "Fatal Error : The library ${pkgMonLib} was not found at ${pkgMonLibPath} path.Exiting with failure..."
 	exit 1
 else
-	. /usr/local/lib/fcpkgmonlib.sh
+	. ${pkgMonLibPath}/${pkgMonLib}
 fi 
 
 # validate running user.
 isRoot=$(isUserRoot)
 if [ "$isRoot" = "no" ]; then
-	echo -e "user is not root.This installation will not continue.To proceed package installation run PackageMon as root.Exiting with failure..."
+	echo -e "user is not root.This installation will not continue.To proceed package installation run fcpkgmon as root.Exiting with failure..."
 	exit 1
 else
 	echo -e "user is verified as root.proceeding further.."
 fi
 
-# Add any run time config variables here.
-export exitCleanUp="true"
-
 # Validate the pkgmonList.txt exists. This is the master map of all installation tools and the approach to installing them.
 # First we will get the current folder path as script may be run from either same place or invoked from another folder.
-export monDir="/etc"
-#if [ "$monDir" != "." ]; then
-#	cd $monDir
-#fi
 
 # Setup some folders specific to installer so that we can track package cache and the install logs.
-export pkgMonCache=/tmp/pkgmon/cache
-export pkgMonLog=/var/log/pkgmon/
 mkdir -p ${pkgMonCache} ${pkgMonLog}
 
 # Identify if there is layout file present in $monDir path. Else quit. We cant proceed until layout file is available.
-if [ ! -f ${monDir}/pkgmonList.txt ]; then
+if [ ! -f ${monDir}/${pkgList} ]; then
 	echo -e "Failed to identify layout config file at path ${monDir}.Exiting with failure..."
 	exit 1
 fi
@@ -45,7 +60,7 @@ fi
 # Validate the file layout passed. If it does not have 5 specific columns seperated by pipe. Then simply quit with error.
 # There will be unexpected issues/errors if the layout is not properly maintained.
 
-isLayoutValid=$(cat ${monDir}/pkgmonList.txt|awk -F"|" '{print NF}'|sort|uniq|wc -l)
+isLayoutValid=$(cat ${monDir}/${pkgList}|awk -F"|" '{print NF}'|sort|uniq|wc -l)
 if [ "$isLayoutValid" != "1" ]; then
 	echo -e "The pkgmonList.txt is corrupt and it needs to be validated.All rows of the file must have five pipe seperated values. please verify."
 	echo -e "Exiting with failure..."
@@ -56,7 +71,7 @@ fi
 # Otherwise we can install all [category name] or we can install all [category-name] [pipe seperated package names ].
 
 if [ $# -eq 0 ]; then
-	echo -e "Please refer to proper usage of the runPackageMon.sh script. Exiting with failure..."
+	echo -e "Please refer to proper usage of the $0 script. Exiting with failure..."
 	showUsage
 	exit 1
 fi
@@ -93,21 +108,21 @@ if [ $# -eq 3 ]; then
 fi
 
 # Initialize the layout file as below to a default state. Modify as per switches.
-export layOutFile="${pkgMonCache}/custompkgmonList.txt"
+export layOutFile="${pkgMonCache}/${layOutFileName}"
 export categoryName=$2
 
 if [ "${pkgNameList}" != "" ]; then
 	echo -e "Building a custom layout package from given package names at : ${layOutFile}"
-	head -1 ${monDir}/pkgmonList.txt > ${layOutFile} # Adding the header for the custom layout file.
+	head -1 ${monDir}/${pkgList} > ${layOutFile} # Adding the header for the custom layout file.
 	for pkgItem in ${pkgNameList}
 	do
-		grep "${pkgItem}" ${monDir}/pkgmonList.txt | grep "|${2}|" >> ${layOutFile}
+		grep "${pkgItem}" ${monDir}/${pkgList} | grep "|${2}|" >> ${layOutFile}
 	done
 else
 	if [ "${categoryName}" = "" ]; then
-		export layOutFile="${monDir}/pkgmonList.txt"
+		export layOutFile="${monDir}/${pkgList}"
 	else
-		grep "|${categoryName}|" ${monDir}/pkgmonList.txt >> ${layOutFile}
+		grep "|${categoryName}|" ${monDir}/${pkgList} >> ${layOutFile}
 	fi
 fi
 

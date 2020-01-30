@@ -13,7 +13,7 @@ function isUserRoot()
 
 function showUsage()
 {
-  echo -e "Usage : runPackageMon.sh [all(M)] [category(O)] [pipe seperated one/more package names.(O)]"
+  echo -e "Usage : $0 [all(M)] [category(O)] [pipe seperated one/more package names.(O)]"
   echo -e "Valid category names currently supported: games/wine/multimedia/tools/products/langs/db."
 }
 

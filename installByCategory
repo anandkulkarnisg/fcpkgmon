@@ -3,6 +3,13 @@
 # Author : Anand Kulkarni
 # Synopsis : Administration Utility to simplify new upgrades or build out of Fedora Workstation.
 
+# Validate root as user running.
+runUser=$(id|awk '{print $1}'|awk -F"(" '{print $2}'|sed "s/)//g")
+if [ "$runUser" != "root" ]; then
+	echo -e "The package build and run should be managed only by root.Exiting with failure."
+	exit 1
+fi
+
 export validCategoryList="games wine multimedia tools products langs db"
 for categoryItem in $validCategoryList
 do
