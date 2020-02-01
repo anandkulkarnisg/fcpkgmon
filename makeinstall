@@ -1,0 +1,31 @@
+#!/usr/bin/bash
+
+# Maintain config list here. The first and second list have corrosponding file and where they are to be copied.
+export installFiles=("fcpkgmon" "fcpkgmon.conf" "fcpkgmonlib" "fcpkgmonList.txt")
+export installFilePaths=("/usr/local/bin" "/etc" "/usr/local/lib" "/etc" "/opt/fcpkgmon")
+export installDirs=("custom")
+export installDirPaths=("/opt/fcpkgmon")
+
+# Install the items now.
+for i in ${!installFiles[@]};
+do
+	installFile=${installFiles[$i]}
+	installFolder=${installFilePaths[$i]}
+	cp ./${installFile} ${installFolder}
+done
+
+for j in ${!installDirs[@]}
+do
+	installDir=${installDirs[$j]}
+	installPath=${installDirPaths[$j]}
+	cp -r ./${installDir} ${installPath}
+done
+
+# Exit with grace.
+#exit 0
+
+#cp ./fcpkgmon /usr/local/bin
+#cp ./fcpkgmon.conf /etc
+#cp ./fcpkgmonlib /usr/local/lib
+#cp ./fcpkgmonList.txt /etc
+#cp -R ./custom /opt/fcpkgmon

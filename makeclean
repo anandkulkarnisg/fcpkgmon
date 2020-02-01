@@ -1,0 +1,20 @@
+#!/usr/bin/bash
+
+# file and dir lists maintain here.
+export fileList="/usr/local/bin/fcpkgmon /usr/local/lib/fcpkgmonlib /etc/fcpkgmonList.txt /etc/fcpkgmon.conf"
+export dirList="/opt/fcpkgmon/custom"
+
+# remove files.
+for fileItem in ${fileList}
+do
+	rm -f ${fileItem}
+done
+
+# remove directories.
+for dirItem in ${dirList}
+do
+	rm -rf ${dirItem}
+done
+
+# Exit with grace.
+#exit 0
