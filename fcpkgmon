@@ -7,7 +7,11 @@
 function setupInitialConfig()
 {
 
-export configFile="/etc/fcpkgmon.conf"
+if [ "$1" = "release" ]; then
+	export configFile="/etc/fcpkgmon.conf"
+else
+	export configFile="$PWD/fcpkgmon.debug.conf"
+fi
 
 if [ ! -f ${configFile} ]; then
 	echo -e "Fatal Error : The ${configFile} is not found.Cant proceed without it.Check Installation was proper\n"
@@ -25,8 +29,18 @@ do
 done <${configFile}
 }
 
+# The first step is we identify if we are in developer mode or installed/release mode. 
+#This is required to identify the correct conf file to be loaded in setupInitialConfig script.
+
+invokePath=$(dirname $0)
+export runMode="debug"
+if [ "${invokePath}" = "/usr/local/bin" ]; then
+	runMode="release"
+fi
+
 # Invoke the critical config setup function.
-setupInitialConfig
+echo -e "Running in ${runMode} mode.."
+setupInitialConfig ${runMode}
 
 # Import library functions here.Identify if it exists.If not simply exit with error.
 if [ ! -f ${pkgMonLibPath}/${pkgMonLib} ]; then

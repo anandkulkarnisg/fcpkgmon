@@ -219,3 +219,4 @@ vmware-workstation-prod|tools|Y|c|vmware workstation pro 15.5 installer for linu
 kate|tools|Y|s|kdb text editor.
 golang|langs|Y|s|go language for development.
 rpm-devel|tools|Y|s|This package should be installed if you want to develop programs that will manipulate RPM packages and databases.
+anaconda-python|tools|Y|c|Anaconda Python and datascience development.
