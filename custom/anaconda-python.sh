@@ -1,7 +1,11 @@
 #!/usr/bin/bash
 
-if [ "${pkgMonCache}" = "" ]; then
-	export pkgMonCache="/tmp/pkgmon/cache"
+# Verfy if the installation is invoked properly via base/parent script of fcpkgmon.
+if [ ! -f ${customInstallPath}/set.sh ]; then
+  echo -e "Invalid invocation. Run via fcpkgmon.Exiting with failure"
+  exit 1
+else
+  . ${customInstallPath}/set.sh
 fi
 
 # DownLoad section.
@@ -13,7 +17,7 @@ chmod 755 ${pkgMonCache}/${pkgName}
 cd ${pkgMonCache}/
 
 # Install section.
-bash {pkgMonCache}/${pkgName}
+bash ${pkgMonCache}/${pkgName}
 
 # Exit gracefully.
 cd $curDir

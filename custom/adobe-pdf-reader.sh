@@ -1,7 +1,13 @@
 #!/usr/bin/bash
 # Adobe reader for Linux.
 
-. set.sh
+# Verfy if the installation is invoked properly via base/parent script of fcpkgmon.
+if [ ! -f ${customInstallPath}/set.sh ]; then
+	echo -e "Invalid invocation. Run via fcpkgmon.Exiting with failure"
+	exit 1
+else
+	. ${customInstallPath}/set.sh
+fi
 
 export downLoadUrl="http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i486linux_enu.rpm"
 export pkgName=$(basename ${downLoadUrl})

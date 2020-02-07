@@ -4,8 +4,12 @@
 # Synopsis : The script simply initializes the installation of vmware workstation pro software and completes the install.
 # The url download link needs to be checked. Its a big file package around 0.5GB.
 
-if [ "${pkgMonCache}" = "" ]; then
-	export pkgMonCache="/tmp/pkgmon/cache"
+# Verfy if the installation is invoked properly via base/parent script of fcpkgmon.
+if [ ! -f ${customInstallPath}/set.sh ]; then
+  echo -e "Invalid invocation. Run via fcpkgmon.Exiting with failure"
+  exit 1
+else
+  . ${customInstallPath}/set.sh
 fi
 
 export curDir=$(pwd)

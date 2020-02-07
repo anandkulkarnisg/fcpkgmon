@@ -77,3 +77,4 @@ cp -R /opt/fcpkgmon/custom %{buildroot}/opt/fcpkgmon
 /opt/fcpkgmon/custom/sublime-text-editor.sh
 /opt/fcpkgmon/custom/steam.sh
 /opt/fcpkgmon/custom/set.sh
+/opt/fcpkgmon/custom/anaconda-python.sh

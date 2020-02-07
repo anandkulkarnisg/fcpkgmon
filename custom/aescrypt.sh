@@ -3,8 +3,13 @@
 # todo : Still the gui tool does not register itself. but this is not priority/critical.
 # Article url : https://www.aescrypt.com/linux_aes_crypt.html
 
-# Source the package env variables.
-. set.sh
+# Verfy if the installation is invoked properly via base/parent script of fcpkgmon.
+if [ ! -f ${customInstallPath}/set.sh ]; then
+  echo -e "Invalid invocation. Run via fcpkgmon.Exiting with failure"
+  exit 1
+else
+  . ${customInstallPath}/set.sh
+fi
 
 curDir=$(PWD)
 
