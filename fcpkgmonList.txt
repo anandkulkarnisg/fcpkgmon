@@ -1,222 +1,220 @@
 PKGNAME|PKGCATEGORY|AUTOSWITCH|INSTALLTYPE|PKGDESCRIPTION
-kblocks|games|Y|s|kblocks tetris style game.
-tuxpaint|games|Y|s|Tux paint game for kids.
-steam|games|Y|c|Linux gaming engine/app for professional players.
-pinball|games|Y|s|The Emilia Pinball project is an open source pinball simulator for linux
-supertux|games|Y|s|SuperTux Karting Racer Game.
-ktuberling|games|Y|s|Make Nice pictures for Kids.
 chromium-bsu|games|Y|s|Intergalactic shooting spaceship game!
-@xfce-desktop|tools|Y|s|xfce lightweight desktop for fedora.
-@kde-desktop|tools|Y|s|kdb desktop, an alternative to gnome desktop.
-xpdf|tools|Y|s|An opensource pdf reader alternative.
-qbittorrent|tools|Y|s|A bit torrent client for linux.
-terminator|tools|Y|s|A powerful linux terminal client.
-gnome-tweak-tool|tools|Y|s|gnome desktop settings tweak tool.
-lsb|tools|Y|s|required by chrome browser for Linux.
-libXScrnSaver|tools|Y|s|required by chrome browser for Linux
-liberation-fonts|tools|Y|s|required by chrome browser for Linux
-libappindicator-gtk3|tools|Y|s|required by chrome browser for Linux
-google-chrome|tools|Y|c|Google Chrome browser for Linux workstation.
-adobe-pdf-reader|tools|Y|c|Adobe acrobat reader for Linux Workstation.
-atk.i686|tools|Y|s|GTK library provides a set of interfaces for adding accessibility support to applications and graphical user interface toolkits.
-pangox-compat|tools|Y|s|This is a compatibility library providing the obsolete pangox library that is not shipped by Pango itself anymore.
-pangox-compat.i686|tools|Y|s|This is a compatibility library providing the obsolete pangox library that is not shipped by Pango itself anymore.32 bit build.
-gdk-pixbuf2.i686|tools|Y|s|The gdk-pixbuf package contains an image loading library used with the GNOME GUI desktop environment. 
-gtk2.i686|tools|Y|s|GTK+ is a multi-platform toolkit for creating graphical user interfaces.
-libidn.i686|tools|Y|s|GNU Libidn is an implementation of the Stringprep, Punycode and IDNA specifications defined by the IETF Internationalized Domain Names (IDN) working group, used for internationalized domain names.
-libXt.i686|tools|Y|s|X.Org X11 libXt runtime library.
-gdk-pixbuf2-xlib|tools|Y|s|This package contains the old libgdk-pixbuf-xlib library that is needed by some programs to load GdkPixbuf using bare XLib calls.
-gdk-pixbuf2-xlib.i686|tools|Y|s|This package contains the old libgdk-pixbuf-xlib library that is needed by some programs to load GdkPixbuf using bare XLib calls.x86 build.
-mesa-libGLU|tools|Y|s|Mesa implementation of the standard GLU OpenGL utility API.
-mesa-libGLU.i686|tools|Y|s|Mesa implementation of the standard GLU OpenGL utility API 32 bit x86 arch.
-libcanberra-gtk2.i686|tools|Y|s| Gtk+ 2.x bindings for libcanberra
-adwaita-gtk2-theme.i686|tools|Y|s|Adwaita theme for gnome desktop.
-PackageKit-gtk3-module.i686|tools|Y|s|PackageKit is a system designed to make installing and updating software on your computer easier.
-pdfmod|tools|Y|s|pdf editing software.
-flash-plugin|tools|Y|c|Adobe Flash plugin for Linux/video/browsers.
-dosbox|tools|Y|s|dosbox for playing old dos compatible games [ Ex:- dave, alladin etc ]
-livecd-tools|tools|Y|s|Tools for generating live CDs on Fedora based systems. 
-liveusb-creator|tools|Y|s|A liveusb creator from Live Fedora images.
-glade|tools|Y|s|Glade is a Widget builder for Gtk/gnome. It allows to create a gtk/gnome interface in C, C++, Ada and Perl.
-glade3|tools|Y|s|Glade is a Widget builder for Gtk/gnome. It allows to create a gtk/gnome interface in C, C++, Ada and Perl.
-pygtk2-libglade|tools|Y|s|This module contains a wrapper for the libglade library. Libglade allows a program to construct its user interface from an XML description, which allows the programmer to keep the UI and program logic separate.
-switchdesk|tools|Y|s|theme switcher between gnome/xfce/kde etc.
-switchdesk-gui|tools|Y|s|gui interface for switchdesk tool.
-alien|tools|Y|s|Tool to covert non rpm packages [ Ex:- .deb ] to rpm format.
-tilix|tools|Y|s|Terminal client for Linux.
-xterm|tools|Y|s|Terminal thin client.
-yakuake|tools|Y|s|Terminal drop down style client.
-lilyterm|tools|Y|s|Terminal thin client.
-chromium|tools|Y|s|Web Browser for Linux kde distribution.
-shellinabox|tools|Y|s|providing terminal access via browser.
-roxterm|tools|Y|s|Terminal client.
-gftp|tools|Y|s|ftp or http download client.
-mediawiki|tools|Y|s|wiki management software.
-bison|tools|Y|s|c,cpp development tool.
-mariadb|tools|Y|s|Mariadb open source db.
-mailcap|tools|Y|s|The mailcap file is used by the metamail program.
-mysql-server|tools|Y|s|ms sql server for Linux.
-mysql|tools|Y|s|mysql linux client.
-php-mysqlnd|tools|Y|s|php mysql interface.
-mod_ssl|tools|Y|s|required for authentication module for web server like httpd.
-spotify|tools|Y|c|Spotify Linux Music Client.
-pidgin|tools|Y|s|Pidgin allows you to talk to anyone using a variety of messaging protocols.
-virtualbox-6.0|tools|Y|c|Virtual Box open source alternative for VMWare virtualization machines.
-@development-tools|tools|Y|s|Development tools c,cpp linux group install.
-kernel-headers|tools|Y|s|kernel headers for vmware workstation and kernel development.
-dkms|tools|Y|s|This package contains the framework for the Dynamic Kernel Module Support.
-qt5-qtx11extras|tools|Y|s|The X11 Extras module provides features specific to platforms using X11, e.g. Linux and UNIX-like systems including embedded Linux systems that use the X Window System.
-elfutils-libelf-devel|tools|Y|s|libelf allows you to access the internals of the ELF object file format, so you can see the different sections of an ELF file.
-zlib-devel|tools|Y|s|zlib compression library development build for debugging.
-keepassx|tools|Y|s|keep passwords safe using this tool.aes encryption.
-sugar-stopwatch|tools|Y|s|stopwatch utility for Linux.
-pan|tools|Y|s|open source news reader.
-p7zip|tools|Y|s|p7zip format for better compression.
-python3-PyPDF2|tools|Y|s|predependency module for pdf shuffler.
-pdfshuffler|tools|Y|s|shuffle, merge and modify pdf files.
-pdfarranger|tools|Y|s|Better tool for pdf handle,merge,cut,paste [ replacing pdfshuffler : https://bugzilla.redhat.com/show_bug.cgi?id=1648514 ]
-shutter|tools|Y|s|screenshot for kde.
-filezilla|tools|Y|s|downloading utility similar to gFTP.
-gparted|tools|Y|s|Manage hard drive partitions.
-aescrypt|tools|Y|c|AES Encryption command line tool for Linux.
-menulibre|tools|Y|s|create custom icons and app shortcuts for gnome desktop.
-docker-ce|tools|Y|c|Docker Container Manager for Fedora Linux Workstation.
-geogebra|tools|Y|c|Geogebra Study Tool for Linux.
-hplip xsane sane|tools|Y|s|hp printer,scanner utility.
-hplip|tools|Y|s|hp printer utility.
-PyQt4|tools|Y|s|Python qt development libraries.
-Pyqt5|tools|Y|s|Python qt development libraries.
-hplip-gui|tools|Y|s|ui for hp printer management.
-python-qt4|tools|Y|s|python qt interface for gui development.
-python-qt5|tools|Y|s|python qt interface for gui development.
-chrome-gnome-shell|tools|Y|s|shell in a chrome browser tool.
-seahorse|tools|Y|s|Seahorse is a graphical interface for managing and using encryption keys.
-pv|tools|Y|s|compress and track progress over terminals for data transfffer.
-dropbox|tools|Y|c|dropbox linux client.
-smartmontools|tools|Y|s|hard disk monitoring tools.
-k3b|tools|Y|s|disk burning utility.
-expandrive|tools|Y|c|ExpanDrive Cloud Drive Mounting software.
-vinagre|tools|Y|s|Vinagre is a VNC client for the GNOME desktop.
-setroubleshoot|tools|Y|s|Application that allows you to view setroubleshoot-server messages.
-calibre|tools|Y|s|open source book reader for Linux.
-blivet-gui|tools|Y|s|very useful gui for dealing with lvm encrypted and lvm volumes.
-dislocker|tools|Y|s|unlocking lvm encrypted volumes in Linux.
-sysstat|tools|Y|s|Very useful for monitoring Linux cpu core load and other stats in real time.
-valgrind|tools|Y|s|Memory detection tool for c,cpp development.
-valgrind.i686|tools|Y|s|memory leakage detection tools for c,cpp programs, x86 compatible.
-svn|tools|Y|s|subversion client for Linux.
-mod_dav_svn|tools|Y|s|Required for apache based web servers.
-git|tools|Y|s|git client for software development over git repository.
-strace|tools|Y|s|Very useful tool for tracing system calls on running processes.
-gitg|tools|Y|s|A graphical user interface for git client.
-gradle|tools|Y|s|build tool for java development projects.
-ElectricFence|tools|Y|s|Memory leakage detection in c,c++ binaries.
-scons|tools|Y|s|Python related documentation processing tool.
-vim|tools|Y|s|enhanced vi, vim editor for Linux.
-gvim|tools|Y|s|gui vi tool for development.
-emacs|tools|Y|s|emacs text editor for Linux.
-sublime-text-editor|tools|Y|c|SubLime Text Editor for Fedora Linux Workstation
-atom-ide-editor|tools|Y|c|Atom Linux IDE editor. Powerful ide for developers.
-brasero|multimedia|Y|s|brasero for cd/dvd buring.
-rpmfusion|multimedia|Y|c|RPM Fusion repositories for additional third party mutimedia codecs etc.
-mplayer|multimedia|Y|s|mplayer for Linux. A video player.
-mencoder|multimedia|Y|s|encoder for music and file processing format.
-xmms-skins|multimedia|Y|c|xmms mp3 player different skins for the player look.
-youtube-dl|multimedia|Y|s|Youtube video downloading software using python.
-openssl|multimedia|Y|s|openssl required for encryption and decryption development using aes.
-compat-openssl10|multimedia|Y|s|compatlib latest for openssl.Backward compatibility.
-xmms|multimedia|Y|s|xmms multimedia and mp3 player.
-xmms-ui|multimedia|Y|s|xmms gui component.
-xmms-skins|multimedia|Y|c|xmms skins customized for feel and look.
-gstreamer|multimedia|Y|s|audio, video and plugins extra.
-gstreamer-plugins-base|multimedia|Y|s|audio, video, plugins base.
-gimp|tools|Y|s|gimp [ GNU Image Manipulation program ]
-libguestfs-tools|tools|Y|s|Install the tools for mounting cow2 file format [ required for solace testing ].
-vlc|multimedia|Y|s|vlc media player.
-avidemux|multimedia|Y|s|The video and audio multiplexer.
-simple-scan|multimedia|Y|s|Simple Scan Utility
-simplescreenrecorder|multimedia|Y|s|Video recording utility for screen.
-ffmpeg|multimedia|Y|s|The ffmpeg package coversion package, translator and encoder.
-xine|multimedia|Y|s|Additional video players for Linux.
-mplayer|multimedia|Y|s|The mplayer for Linux.
-mplayer-gui|multimedia|Y|s|The mplayer GUI client.
-mplayer-skins|multimedia|Y|c|The mplayer skins for look and feel.
-bluejeans|multimedia|Y|c|bluejeans video/audio conferencing rpm required for facebook interview.
-pavucontrol|multimedia|Y|s|Install pulse and audio control fine grained.
-skype|multimedia|Y|c|Skype for Linux.First Install dependencies.
-tuxpaint|multimedia|Y|s|Tux Paint installation.
-gstreamer1-libav|multimedia|Y|s|Multi Media codecs.
-pulseaudio-equalizer|multimedia|Y|c|Install the pulseaudio equalizer[https://www.fosslinux.com/1584/how-to-install-pulse-audio-equalizer-in-fedora-25.htm/]
-gstreamer-extra-plugins|multimedia|Y|c|Install the additional codecs and required propritetary packages.
-gcc-c++|langs|Y|s|g++ cpp compiler suite for Linux.
-glibc-devel.i686|langs|Y|s|c library for development x86 32 bit.
-libgcc.i686|langs|Y|s|gcc libraries for x86 32 bit arch.
-libstdc++.i686|langs|Y|s|c++ std library for x86 32 bit arch.
-eclipse|langs|Y|s|eclipse for fedora. It is not working in fc31
-pam-devel|langs|Y|s|pluggable authentication module.
-pam-devel.i686|langs|Y|s|pluggable authentication module development.
-openssl-devel|langs|Y|s|openssl based development libraries for debug.
-openssl-devel.i686|langs|Y|s|openssl development debug Library.
-java-1.8.0-openjdk-devel|langs|Y|s|open source java jvm implementation.
-openssl-libs.i686|langs|Y|s|openssl library 32 bit compatiable. 
-zlib|langs|Y|s|zlib compression utility.
-zlib.i686|langs|Y|s|zlib utility compression tool x32 compatiable library.
-openssl-libs|langs|Y|s|openssl libraries for encryption support.
-boost|langs|Y|s|boost cpp libraries.
+kblocks|games|Y|s|kblocks tetris style game.
+ktuberling|games|Y|s|Make Nice pictures for Kids.
+pinball|games|Y|s|The Emilia Pinball project is an open source pinball simulator for linux
+steam|games|Y|c|Linux gaming engine/app for professional players.
+supertux|games|Y|s|SuperTux Karting Racer Game.
+tuxpaint|games|Y|s|Tux paint game for kids.
 boost-devel|langs|Y|s|cpp boost development support and debug libraries.
-R|langs|Y|s|R statistical programming language.
-julia|langs|Y|s|Julia programming language.
-scala|langs|Y|s|scala programming language.
-icedtea-web|langs|Y|s|java plugin required for firefox browser in Linux.
+boost|langs|Y|s|boost cpp libraries.
+clang|langs|Y|s|Install the clang compiler support.
+cmake3|langs|Y|s|install the cmake development packages.
 codeblocks|langs|Y|s|Open Source Alternative for c,cpp development ide.
+ddd|langs|Y|s|display data debugger, open source alternative for gui based debugging.
+devtools|langs|Y|c|C,C++ Development tool suite for Linux.
+#eclipse|langs|Y|s|eclipse for fedora. It is not working in fc31.Disabling it.
+gcc-c++|langs|Y|s|g++ cpp compiler suite for Linux.
+gdb|langs|Y|d|debuginfo rpm package for debugger in gdb
+glibc-devel.i686|langs|Y|s|c library for development x86 32 bit.
+golang|langs|Y|s|go language for development.
+gsoap|langs|Y|s|gsoap interface for c,cpp network programming.
+icedtea-web|langs|Y|s|java plugin required for firefox browser in Linux.
+java-1.8.0-openjdk-devel|langs|Y|s|open source java jvm implementation.
+java-openjdk|langs|Y|s|Install openjdk jvm implementation.
+julia|langs|Y|s|Julia programming language.
+kernel-devel|langs|Y|s|Kernel development module required for vmware workstation and few other apps.
+ksh|langs|Y|s|korn shell for Linux.
+libgcc.i686|langs|Y|s|gcc libraries for x86 32 bit arch.
+libgcc|langs|Y|s|gcc c library implementation.
+libnsl.i686|langs|Y|s|Required for the 32 bit kdb/q binary.
+libstdc++.i686|langs|Y|s|c++ std library for x86 32 bit arch.
+libstdc++|langs|Y|s|std c++ library for Linux.
+libtool|langs|Y|s|Install the libtool required for building the aescrypt tool.
+libxml2-devel|langs|Y|s|xml c/c++ development library.
+libxml2|langs|Y|s|xml c/c++ development library.
+libxml-devel|langs|Y|s|xml c/c++ development library.
+libxml++|langs|Y|s|xml c/c++ development library.
+libxml|langs|Y|s|xml c/c++ development library.
+log4cpp-devel|langs|Y|s|log4cpp devel package for debugging issues in core logging library.
+log4cpp|langs|Y|s|log4cpp for building applications with proper logging.
+monodevelop|langs|Y|s|.NET development on Linux.
+nodejs|langs|Y|s|nodejs development env for Linux.
+openssl-devel.i686|langs|Y|s|openssl development debug Library.
+openssl-devel|langs|Y|s|openssl based development libraries for debug.
+openssl-libs.i686|langs|Y|s|openssl library 32 bit compatiable. 
+openssl-libs|langs|Y|s|openssl libraries for encryption support.
+pam-devel.i686|langs|Y|s|pluggable authentication module development.
+pam-devel|langs|Y|s|pluggable authentication module.
+pipcustom|langs|Y|c|Python commonly used packages for ML learning.
+poco-devel|langs|Y|s|# Install the Poco devel libraries for C++ poco development. [ Ex:- Required for cyclic barrier development ].
+protobuf-devel|langs|Y|s|google protobuf for message serilization development library debugging.
+protobuf|langs|Y|s|google protobuf for message serilization development.
+python3-tkinter|langs|Y|s|Python TK development interface.
+python-devel|langs|Y|s|Python development libraries for debugging.
+python-virtualenv|langs|Y|s|# Install python virtual env management rpm.
+R|langs|Y|s|R statistical programming language.
 rlwrap|langs|Y|s|A very useful tool to remember commandline history for Linux terminal clients.
 rstudio|langs|Y|c|R Studio for Linux.
-ksh|langs|Y|s|korn shell for Linux.
-ddd|langs|Y|s|display data debugger, open source alternative for gui based debugging.
-gsoap|langs|Y|s|gsoap interface for c,cpp network programming.
-libgcc|langs|Y|s|gcc c library implementation.
-libstdc++|langs|Y|s|std c++ library for Linux.
-nodejs|langs|Y|s|nodejs development env for Linux.
-kernel-devel|langs|Y|s|Kernel development module required for vmware workstation and few other apps.
-gdb|langs|Y|d|debuginfo rpm package for debugger in gdb
-monodevelop|langs|Y|s|.NET development on Linux.
-python-devel|langs|Y|s|Python development libraries for debugging.
-python3-tkinter|langs|Y|s|Python TK development interface.
-devtools|langs|Y|c|C,C++ Development tool suite for Linux.
-pipcustom|langs|Y|c|Python commonly used packages for ML learning.
-libtool|langs|Y|s|Install the libtool required for building the aescrypt tool.
-poco-devel|langs|Y|s|# Install the Poco devel libraries for C++ poco development. [ Ex:- Required for cyclic barrier development ].
-log4cpp|langs|Y|s|log4cpp for building applications with proper logging.
-log4cpp-devel|langs|Y|s|log4cpp devel package for debugging issues in core logging library.
-xerces-c|langs|Y|s|xerces-c for c++ xml based library development.
-xerces-c-devel|langs|Y|s|xerces-c for library deugging and development.
-libxml|langs|Y|s|xml c/c++ development library.
-libxml-devel|langs|Y|s|xml c/c++ development library.
-libxml2|langs|Y|s|xml c/c++ development library.
-libxml2-devel|langs|Y|s|xml c/c++ development library.
-libxml++|langs|Y|s|xml c/c++ development library.
+scala|langs|Y|s|scala programming language.
 tinyxml|langs|Y|s|Install tinyXML support for C++ development.
-protobuf|langs|Y|s|google protobuf for message serilization development.
-protobuf-devel|langs|Y|s|google protobuf for message serilization development library debugging.
-cmake3|langs|Y|s|install the cmake development packages.
-python-virtualenv|langs|Y|s|# Install python virtual env management rpm.
-libnsl.i686|langs|Y|s|Required for the 32 bit kdb/q binary.
-clang|langs|Y|s|Install the clang compiler support.
-java-openjdk|langs|Y|s|Install openjdk jvm implementation.
-wine|wine|Y|s|running windows applications on Linux using Wine interface.
-notepadplusplus|wine|Y|c|notepad++ tool for Linux.
-wintextpad|wine|Y|c|TextPad utility for windows software.
-winmerge|wine|Y|c|TextPad utility for windows software.
-rarlinux|wine|Y|c|winrar linux command line utility software.
-#winrarui|wine|Y|c|winrar linux gui software. # This is disabled due to failure to install and crash.
-rufus|wine|Y|c|Rufus useful utility for creating the bootable linux key for emergency purpose.
+xerces-c-devel|langs|Y|s|xerces-c for library deugging and development.
+xerces-c|langs|Y|s|xerces-c for c++ xml based library development.
+zlib.i686|langs|Y|s|zlib utility compression tool x32 compatiable library.
+zlib|langs|Y|s|zlib compression utility.
+avidemux|multimedia|Y|s|The video and audio multiplexer.
+bluejeans|multimedia|Y|c|bluejeans video/audio conferencing rpm required for facebook interview.
+brasero|multimedia|Y|s|brasero for cd/dvd buring.
+compat-openssl10|multimedia|Y|s|compatlib latest for openssl.Backward compatibility.
+ffmpeg|multimedia|Y|s|The ffmpeg package coversion package, translator and encoder.
+gstreamer1-libav|multimedia|Y|s|Multi Media codecs.
+gstreamer-extra-plugins|multimedia|Y|c|Install the additional codecs and required propritetary packages.
+gstreamer|multimedia|Y|s|audio, video and plugins extra.
+gstreamer-plugins-base|multimedia|Y|s|audio, video, plugins base.
+mencoder|multimedia|Y|s|encoder for music and file processing format.
+mplayer-gui|multimedia|Y|s|The mplayer GUI client.
+mplayer|multimedia|Y|s|mplayer for Linux. A video player.
+mplayer-skins|multimedia|Y|c|The mplayer skins for look and feel.
+openssl|multimedia|Y|s|openssl required for encryption and decryption development using aes.
+pavucontrol|multimedia|Y|s|Install pulse and audio control fine grained.
+pulseaudio-equalizer|multimedia|Y|c|Install the pulseaudio equalizer[https://www.fosslinux.com/1584/how-to-install-pulse-audio-equalizer-in-fedora-25.htm/]
+rpmfusion|multimedia|Y|c|RPM Fusion repositories for additional third party mutimedia codecs etc.
+simple-scan|multimedia|Y|s|Simple Scan Utility
+simplescreenrecorder|multimedia|Y|s|Video recording utility for screen.
+skype|multimedia|Y|c|Skype for Linux.First Install dependencies.
+vlc|multimedia|Y|s|vlc media player.
+xine|multimedia|Y|s|Additional video players for Linux.
+xmms|multimedia|Y|s|xmms multimedia and mp3 player.
+xmms-skins|multimedia|Y|c|xmms skins customized for feel and look.
+xmms-ui|multimedia|Y|s|xmms gui component.
+youtube-dl|multimedia|Y|s|Youtube video downloading software using python.
+adobe-pdf-reader|tools|Y|c|Adobe acrobat reader for Linux Workstation.
+adwaita-gtk2-theme.i686|tools|Y|s|Adwaita theme for gnome desktop.
+aescrypt|tools|Y|c|AES Encryption command line tool for Linux.
+alien|tools|Y|s|Tool to covert non rpm packages [ Ex:- .deb ] to rpm format.
+anaconda-python|tools|Y|c|Anaconda Python and datascience development.
+atk.i686|tools|Y|s|GTK library provides a set of interfaces for adding accessibility support to applications and graphical user interface toolkits.
+atom-ide-editor|tools|Y|c|Atom Linux IDE editor. Powerful ide for developers.
+bison|tools|Y|s|c,cpp development tool.
+blivet-gui|tools|Y|s|very useful gui for dealing with lvm encrypted and lvm volumes.
+calibre|tools|Y|s|open source book reader for Linux.
+chrome-gnome-shell|tools|Y|s|shell in a chrome browser tool.
+chromium|tools|Y|s|Web Browser for Linux kde distribution.
+@development-tools|tools|Y|s|Development tools c,cpp linux group install.
+dislocker|tools|Y|s|unlocking lvm encrypted volumes in Linux.
+dkms|tools|Y|s|This package contains the framework for the Dynamic Kernel Module Support.
+docker-ce|tools|Y|c|Docker Container Manager for Fedora Linux Workstation.
+dosbox|tools|Y|s|dosbox for playing old dos compatible games [ Ex:- dave, alladin etc ]
+dotnet-microsoft|tools|Y|c|Microsoft .NET run time sdk and other deve packages.
+dropbox|tools|Y|c|dropbox linux client.
+ElectricFence|tools|Y|s|Memory leakage detection in c,c++ binaries.
+elfutils-libelf-devel|tools|Y|s|libelf allows you to access the internals of the ELF object file format, so you can see the different sections of an ELF file.
+emacs|tools|Y|s|emacs text editor for Linux.
+expandrive|tools|Y|c|ExpanDrive Cloud Drive Mounting software.
+filezilla|tools|Y|s|downloading utility similar to gFTP.
+flash-plugin|tools|Y|c|Adobe Flash plugin for Linux/video/browsers.
+gdk-pixbuf2.i686|tools|Y|s|The gdk-pixbuf package contains an image loading library used with the GNOME GUI desktop environment. 
+gdk-pixbuf2-xlib.i686|tools|Y|s|This package contains the old libgdk-pixbuf-xlib library that is needed by some programs to load GdkPixbuf using bare XLib calls.x86 build.
+gdk-pixbuf2-xlib|tools|Y|s|This package contains the old libgdk-pixbuf-xlib library that is needed by some programs to load GdkPixbuf using bare XLib calls.
+geogebra|tools|Y|c|Geogebra Study Tool for Linux.
+gftp|tools|Y|s|ftp or http download client.
+gimp|tools|Y|s|gimp [ GNU Image Manipulation program ]
+gitg|tools|Y|s|A graphical user interface for git client.
+git|tools|Y|s|git client for software development over git repository.
+glade3|tools|Y|s|Glade is a Widget builder for Gtk/gnome. It allows to create a gtk/gnome interface in C, C++, Ada and Perl.
+glade|tools|Y|s|Glade is a Widget builder for Gtk/gnome. It allows to create a gtk/gnome interface in C, C++, Ada and Perl.
+gnome-tweak-tool|tools|Y|s|gnome desktop settings tweak tool.
+google-chrome|tools|Y|c|Google Chrome browser for Linux workstation.
+gparted|tools|Y|s|Manage hard drive partitions.
+gradle|tools|Y|s|build tool for java development projects.
+gtk2.i686|tools|Y|s|GTK+ is a multi-platform toolkit for creating graphical user interfaces.
+gvim|tools|Y|s|gui vi tool for development.
+hplip-gui|tools|Y|s|ui for hp printer management.
+hplip|tools|Y|s|hp printer utility.
+hplip xsane sane|tools|Y|s|hp printer,scanner utility.
 ide-clion|tools|Y|c|jetbrains c++ ide editor.
 ide-intellij|tools|Y|c|jetbrains java ide editor.
-pycharm|tools|Y|c|jetbrains python professional development ide.
-dotnet-microsoft|tools|Y|c|Microsoft .NET run time sdk and other deve packages.
-vscode-microsoft|tools|Y|c|microsoft visual code for development ide.
-vmware-workstation-prod|tools|Y|c|vmware workstation pro 15.5 installer for linux.Manage vm machine images.
+k3b|tools|Y|s|disk burning utility.
 kate|tools|Y|s|kdb text editor.
-golang|langs|Y|s|go language for development.
+@kde-desktop|tools|Y|s|kdb desktop, an alternative to gnome desktop.
+keepassx|tools|Y|s|keep passwords safe using this tool.aes encryption.
+kernel-headers|tools|Y|s|kernel headers for vmware workstation and kernel development.
+libappindicator-gtk3|tools|Y|s|required by chrome browser for Linux
+libcanberra-gtk2.i686|tools|Y|s| Gtk+ 2.x bindings for libcanberra
+liberation-fonts|tools|Y|s|required by chrome browser for Linux
+libguestfs-tools|tools|Y|s|Install the tools for mounting cow2 file format [ required for solace testing ].
+libidn.i686|tools|Y|s|GNU Libidn is an implementation of the Stringprep, Punycode and IDNA specifications defined by the IETF Internationalized Domain Names (IDN) working group, used for internationalized domain names.
+libXScrnSaver|tools|Y|s|required by chrome browser for Linux
+libXt.i686|tools|Y|s|X.Org X11 libXt runtime library.
+lilyterm|tools|Y|s|Terminal thin client.
+livecd-tools|tools|Y|s|Tools for generating live CDs on Fedora based systems. 
+liveusb-creator|tools|Y|s|A liveusb creator from Live Fedora images.
+lsb|tools|Y|s|required by chrome browser for Linux.
+mailcap|tools|Y|s|The mailcap file is used by the metamail program.
+mariadb|tools|Y|s|Mariadb open source db.
+mediawiki|tools|Y|s|wiki management software.
+menulibre|tools|Y|s|create custom icons and app shortcuts for gnome desktop.
+mesa-libGLU.i686|tools|Y|s|Mesa implementation of the standard GLU OpenGL utility API 32 bit x86 arch.
+mesa-libGLU|tools|Y|s|Mesa implementation of the standard GLU OpenGL utility API.
+mod_dav_svn|tools|Y|s|Required for apache based web servers.
+mod_ssl|tools|Y|s|required for authentication module for web server like httpd.
+mysql-server|tools|Y|s|ms sql server for Linux.
+mysql|tools|Y|s|mysql linux client.
+p7zip|tools|Y|s|p7zip format for better compression.
+PackageKit-gtk3-module.i686|tools|Y|s|PackageKit is a system designed to make installing and updating software on your computer easier.
+pangox-compat.i686|tools|Y|s|This is a compatibility library providing the obsolete pangox library that is not shipped by Pango itself anymore.32 bit build.
+pangox-compat|tools|Y|s|This is a compatibility library providing the obsolete pangox library that is not shipped by Pango itself anymore.
+pan|tools|Y|s|open source news reader.
+pdfarranger|tools|Y|s|Better tool for pdf handle,merge,cut,paste [ replacing pdfshuffler : https://bugzilla.redhat.com/show_bug.cgi?id=1648514 ]
+pdfmod|tools|Y|s|pdf editing software.
+pdfshuffler|tools|Y|s|shuffle, merge and modify pdf files.
+php-mysqlnd|tools|Y|s|php mysql interface.
+pidgin|tools|Y|s|Pidgin allows you to talk to anyone using a variety of messaging protocols.
+pv|tools|Y|s|compress and track progress over terminals for data transfffer.
+pycharm|tools|Y|c|jetbrains python professional development ide.
+pygtk2-libglade|tools|Y|s|This module contains a wrapper for the libglade library. Libglade allows a program to construct its user interface from an XML description, which allows the programmer to keep the UI and program logic separate.
+PyQt4|tools|Y|s|Python qt development libraries.
+Pyqt5|tools|Y|s|Python qt development libraries.
+python3-PyPDF2|tools|Y|s|predependency module for pdf shuffler.
+python3-spyder|tools|Y|s|spyder python editor for linux.
+python-qt4|tools|Y|s|python qt interface for gui development.
+python-qt5|tools|Y|s|python qt interface for gui development.
+qbittorrent|tools|Y|s|A bit torrent client for linux.
+qt5-qtx11extras|tools|Y|s|The X11 Extras module provides features specific to platforms using X11, e.g. Linux and UNIX-like systems including embedded Linux systems that use the X Window System.
+roxterm|tools|Y|s|Terminal client.
 rpm-devel|tools|Y|s|This package should be installed if you want to develop programs that will manipulate RPM packages and databases.
-anaconda-python|tools|Y|c|Anaconda Python and datascience development.
+scons|tools|Y|s|Python related documentation processing tool.
+seahorse|tools|Y|s|Seahorse is a graphical interface for managing and using encryption keys.
+setroubleshoot|tools|Y|s|Application that allows you to view setroubleshoot-server messages.
+shellinabox|tools|Y|s|providing terminal access via browser.
+shutter|tools|Y|s|screenshot for kde.
+smartmontools|tools|Y|s|hard disk monitoring tools.
+spotify|tools|Y|c|Spotify Linux Music Client.
+strace|tools|Y|s|Very useful tool for tracing system calls on running processes.
+sublime-text-editor|tools|Y|c|SubLime Text Editor for Fedora Linux Workstation
+sugar-stopwatch|tools|Y|s|stopwatch utility for Linux.
+svn|tools|Y|s|subversion client for Linux.
+switchdesk-gui|tools|Y|s|gui interface for switchdesk tool.
+switchdesk|tools|Y|s|theme switcher between gnome/xfce/kde etc.
+sysstat|tools|Y|s|Very useful for monitoring Linux cpu core load and other stats in real time.
+terminator|tools|Y|s|A powerful linux terminal client.
+tilix|tools|Y|s|Terminal client for Linux.
+valgrind.i686|tools|Y|s|memory leakage detection tools for c,cpp programs, x86 compatible.
+valgrind|tools|Y|s|Memory detection tool for c,cpp development.
+vim|tools|Y|s|enhanced vi, vim editor for Linux.
+vinagre|tools|Y|s|Vinagre is a VNC client for the GNOME desktop.
+virtualbox-6.0|tools|Y|c|Virtual Box open source alternative for VMWare virtualization machines.
+vmware-workstation-prod|tools|Y|c|vmware workstation pro 15.5 installer for linux.Manage vm machine images.
+vscode-microsoft|tools|Y|c|microsoft visual code for development ide.
+@xfce-desktop|tools|Y|s|xfce lightweight desktop for fedora.
+xpdf|tools|Y|s|An opensource pdf reader alternative.
+xterm|tools|Y|s|Terminal thin client.
+yakuake|tools|Y|s|Terminal drop down style client.
+zlib-devel|tools|Y|s|zlib compression library development build for debugging.
+notepadplusplus|wine|Y|c|notepad++ tool for Linux.
+rarlinux|wine|Y|c|winrar linux command line utility software.
+rufus|wine|Y|c|Rufus useful utility for creating the bootable linux key for emergency purpose.
+wine|wine|Y|s|running windows applications on Linux using Wine interface.
+winmerge|wine|Y|c|TextPad utility for windows software.
+#winrarui|wine|Y|c|winrar linux gui software. # This is disabled due to failure to install and crash.
+wintextpad|wine|Y|c|TextPad utility for windows software.
