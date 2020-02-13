@@ -218,3 +218,4 @@ wine|wine|Y|s|running windows applications on Linux using Wine interface.
 winmerge|wine|Y|c|TextPad utility for windows software.
 #winrarui|wine|Y|c|winrar linux gui software. # This is disabled due to failure to install and crash.
 wintextpad|wine|Y|c|TextPad utility for windows software.
+microsoft-mssql|db|Y|c|Microsoft mssql server and command line tools.

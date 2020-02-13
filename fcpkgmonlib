@@ -41,7 +41,7 @@ function runDnfInstall()
       INSTALLTYPE="group install"
     else
       if [ "$3" = "c" ]; then
-				bash /opt/fcpkgmon/custom/${1}.sh
+				bash ${customInstallPath}/${1}.sh
       else
         if [ "$3" = "d" ]; then
           INSTALLTYPE="debuginfo-install"

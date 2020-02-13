@@ -122,38 +122,37 @@ if [ $# -eq 3 ]; then
 fi
 
 # Initialize the layout file as below to a default state. Modify as per switches.
-export layOutFile="${pkgMonCache}/${layOutFileName}"
+export layOutFile="${pkgMonCache}/${layOutFileName}"; cat /dev/null > ${layOutFile}
 export categoryName=$2
 
 if [ "${pkgNameList}" != "" ]; then
 	echo -e "Building a custom layout package from given package names at : ${layOutFile}"
-	head -1 ${monDir}/${pkgList} > ${layOutFile} # Adding the header for the custom layout file.
+	#head -1 ${monDir}/${pkgList} > ${layOutFile} # Adding the header for the custom layout file. This is not needed as it serves no purpose while attempting installation.
 	for pkgItem in ${pkgNameList}
 	do
-		grep "${pkgItem}" ${monDir}/${pkgList} | grep "|${2}|" >> ${layOutFile}
+		grep "${pkgItem}" ${monDir}/${pkgList} | grep -v ^$ | grep "|${2}|" >> ${layOutFile}
 	done
 else
 	if [ "${categoryName}" = "" ]; then
 		export layOutFile="${monDir}/${pkgList}"
 	else
-		grep "|${categoryName}|" ${monDir}/${pkgList} >> ${layOutFile}
+		grep "|${categoryName}|" ${monDir}/${pkgList} | grep -v ^$ >> ${layOutFile}
 	fi
 fi
-
+if [ ! -s "${layOutFile}" ]; then
+	echo -e "The resulting custom layout file is empty.This is because the items mentioned do not have a category or they are not in masterList."
+	echo -e "Exiting with failure..."
+	exit 1
+fi 
 # Assume at this stage that parameters passed are 2 only. Code this piece out working first. then consider optimal design of all cases including the third.
 # Third case : $0 [all] [category] [specificPipeSeperatedPackageList]
 
 while IFS= read -r line
 do
-	cnt=$(echo $line|grep -v ^#|wc -l) #Ability to add comment lines and ignore them in processing.
-	if [ $cnt -ne 0 ]; then
 	  pkgName=$(echo $line|awk -F'|' '{print $1}')
-			if [ "$pkgName" != "PKGNAME" ]; then
-					autoSwitch=$(echo $line|awk -F'|' '{print $3}')
-					installType=$(echo $line|awk -F'|' '{print $4}')
-					runDnfInstall $pkgName $autoSwitch $installType 
-			fi
-	fi
+		autoSwitch=$(echo $line|awk -F'|' '{print $3}')
+	  installType=$(echo $line|awk -F'|' '{print $4}')
+		runDnfInstall $pkgName $autoSwitch $installType 
 done < ${layOutFile}
 
 # Run the cleanup before exit.
