@@ -157,6 +157,7 @@ done < ${layOutFile}
 
 # Run the cleanup before exit.
 if [ "${exitCleanUp}" = "true" ]; then
+	echo -e "running requested cleanup of the ${pkgMonCache} area.."
   find ${pkgMonCache} -type f | xargs rm -f  
   find ${pkgMonCache} -type d | xargs rm -rf  
   mkdir -p ${pkgMonCache}

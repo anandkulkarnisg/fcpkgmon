@@ -20,3 +20,5 @@
 
 - enumerations : standard i.e simple/s, group install/g, debuginfo install/d and custom/c
 
+1. recovery from crash during install.
+2. pkgWise time log start|end|status in report file.
