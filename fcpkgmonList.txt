@@ -1,4 +1,5 @@
 PKGNAME|PKGCATEGORY|AUTOSWITCH|INSTALLTYPE|PKGDESCRIPTION
+microsoft-mssql|db|Y|c|Microsoft mssql server and command line tools.
 chromium-bsu|games|Y|s|Intergalactic shooting spaceship game!
 kblocks|games|Y|s|kblocks tetris style game.
 ktuberling|games|Y|s|Make Nice pictures for Kids.
@@ -160,6 +161,7 @@ mod_dav_svn|tools|Y|s|Required for apache based web servers.
 mod_ssl|tools|Y|s|required for authentication module for web server like httpd.
 mysql-server|tools|Y|s|ms sql server for Linux.
 mysql|tools|Y|s|mysql linux client.
+ninja-build|tools|Y|s|ninja build for faster cmake builds used by Eclipse C++ CDT.
 p7zip|tools|Y|s|p7zip format for better compression.
 PackageKit-gtk3-module.i686|tools|Y|s|PackageKit is a system designed to make installing and updating software on your computer easier.
 pangox-compat.i686|tools|Y|s|This is a compatibility library providing the obsolete pangox library that is not shipped by Pango itself anymore.32 bit build.
@@ -218,4 +220,3 @@ wine|wine|Y|s|running windows applications on Linux using Wine interface.
 winmerge|wine|Y|c|TextPad utility for windows software.
 #winrarui|wine|Y|c|winrar linux gui software. # This is disabled due to failure to install and crash.
 wintextpad|wine|Y|c|TextPad utility for windows software.
-microsoft-mssql|db|Y|c|Microsoft mssql server and command line tools.

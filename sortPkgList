@@ -1,11 +1,12 @@
 #!/bin/bash
 
+export srcPkgList="fcpkgmonList.txt"
 export outPutTmpFile=sorted.txt.$$
 cat /dev/null > $PWD/${outPutTmpFile}
 head -1 fcpkgmonList.txt > $PWD/${outPutTmpFile}
 export installCategories="db games langs multimedia products tools wine"
 for installItem in ${installCategories}
 do
-	cat fcpkgmonList.txt|grep -i "|${installItem}|"|sort -t '|' -k 1 >> $PWD/${outPutTmpFile}
+	cat ${srcPkgList}|grep "|${installItem}|"|sort -t '|' -k 1 >> $PWD/${outPutTmpFile}
 done
-
+mv $PWD/${outPutTmpFile} fcpkgmonList.txt
