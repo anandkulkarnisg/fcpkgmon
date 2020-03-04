@@ -23,9 +23,3 @@ done
 
 # Exit with grace.
 #exit 0
-
-#cp ./fcpkgmon /usr/local/bin
-#cp ./fcpkgmon.conf /etc
-#cp ./fcpkgmonlib /usr/local/lib
-#cp ./fcpkgmonList.txt /etc
-#cp -R ./custom /opt/fcpkgmon
