@@ -102,6 +102,7 @@ calibre|tools|Y|s|open source book reader for Linux.
 chrome-gnome-shell|tools|Y|s|shell in a chrome browser tool.
 chromium|tools|Y|s|Web Browser for Linux kde distribution.
 @development-tools|tools|Y|s|Development tools c,cpp linux group install.
+dia|tools|Y|s|Free Diagram developer tool for Fedora Linux.
 dislocker|tools|Y|s|unlocking lvm encrypted volumes in Linux.
 dkms|tools|Y|s|This package contains the framework for the Dynamic Kernel Module Support.
 docker-ce|tools|Y|c|Docker Container Manager for Fedora Linux Workstation.
@@ -208,6 +209,7 @@ vinagre|tools|Y|s|Vinagre is a VNC client for the GNOME desktop.
 virtualbox-6.0|tools|Y|c|Virtual Box open source alternative for VMWare virtualization machines.
 vmware-workstation-prod|tools|Y|c|vmware workstation pro 15.5 installer for linux.Manage vm machine images.
 vscode-microsoft|tools|Y|c|microsoft visual code for development ide.
+vym|tools|Y|s|mindmap or freemind style software.
 @xfce-desktop|tools|Y|s|xfce lightweight desktop for fedora.
 xpdf|tools|Y|s|An opensource pdf reader alternative.
 xterm|tools|Y|s|Terminal thin client.
