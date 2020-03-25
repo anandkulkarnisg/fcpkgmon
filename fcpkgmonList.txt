@@ -121,6 +121,7 @@ gdk-pixbuf2-xlib|tools|Y|s|This package contains the old libgdk-pixbuf-xlib libr
 geogebra|tools|Y|c|Geogebra Study Tool for Linux.
 gftp|tools|Y|s|ftp or http download client.
 gimp|tools|Y|s|gimp [ GNU Image Manipulation program ]
+git-credential-libsecret|tools|Y|s|seperated git tool for the libsecret password management for repositories.
 gitg|tools|Y|s|A graphical user interface for git client.
 git|tools|Y|s|git client for software development over git repository.
 glade3|tools|Y|s|Glade is a Widget builder for Gtk/gnome. It allows to create a gtk/gnome interface in C, C++, Ada and Perl.
