@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-pipPackageList="matplotlib numpy scipy pandas ipython scikit-learn theano tensorflow scrappy nltk pattern seaborn bokeh basemap networkx requests"
+pipPackageList="matplotlib numpy scipy pandas ipython scikit-learn theano tensorflow scrappy nltk pattern seaborn bokeh basemap networkx requests weasyprint"
 for pipItem in $pipPackageList
 do
 	sudo -u anand pip install --user ${pipItem}

@@ -213,6 +213,7 @@ vscode-microsoft|tools|Y|c|microsoft visual code for development ide.
 vym|tools|Y|s|mindmap or freemind style software.
 @xfce-desktop|tools|Y|s|xfce lightweight desktop for fedora.
 xpdf|tools|Y|s|An opensource pdf reader alternative.
+xsane|tools|Y|s|xsane scanner utility for fedora.
 xterm|tools|Y|s|Terminal thin client.
 yakuake|tools|Y|s|Terminal drop down style client.
 zlib-devel|tools|Y|s|zlib compression library development build for debugging.
