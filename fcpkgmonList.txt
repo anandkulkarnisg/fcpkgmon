@@ -185,9 +185,12 @@ python-qt4|tools|Y|s|python qt interface for gui development.
 python-qt5|tools|Y|s|python qt interface for gui development.
 qbittorrent|tools|Y|s|A bit torrent client for linux.
 qt5-qtx11extras|tools|Y|s|The X11 Extras module provides features specific to platforms using X11, e.g. Linux and UNIX-like systems including embedded Linux systems that use the X Window System.
+rclone-browser|tools|Y|c|rclone ui built custom rpm package from source [ one drive contains the rpm package ].
+rclone|tools|Y|s|rclone for managing cloud based drive for backup [ gdrive, onedrive ].
 roxterm|tools|Y|s|Terminal client.
 rpm-devel|tools|Y|s|This package should be installed if you want to develop programs that will manipulate RPM packages and databases.
 scons|tools|Y|s|Python related documentation processing tool.
+screenfetch|tools|y|s|Fedora Logo and computer information in terminal.
 seahorse|tools|Y|s|Seahorse is a graphical interface for managing and using encryption keys.
 setroubleshoot|tools|Y|s|Application that allows you to view setroubleshoot-server messages.
 shellinabox|tools|Y|s|providing terminal access via browser.
