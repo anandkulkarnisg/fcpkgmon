@@ -78,3 +78,5 @@ cp -R /opt/fcpkgmon/custom %{buildroot}/opt/fcpkgmon
 /opt/fcpkgmon/custom/steam.sh
 /opt/fcpkgmon/custom/set.sh
 /opt/fcpkgmon/custom/anaconda-python.sh
+/opt/fcpkgmon/custom/microsoft-mssql.sh
+/opt/fcpkgmon/custom/vivaldi-browser.sh
