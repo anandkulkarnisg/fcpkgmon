@@ -35,4 +35,5 @@ cp /etc/fcpkgmonList.txt %{buildroot}/etc
 cp /etc/fcpkgmon.conf %{buildroot}/etc
 cp -R /opt/fcpkgmon/custom %{buildroot}/opt/fcpkgmon
 
+# Use the generated file list below for files section.
 %files -f /tmp/%{name}.spec.fileList.txt

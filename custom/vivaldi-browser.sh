@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # Check if package installation is needed first.
 isVivaldiBrowserInstalled=$(dnf repolist|grep -i "vivaldi"|wc -l|sed "s/ //g")
