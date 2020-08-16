@@ -211,6 +211,7 @@ valgrind|tools|Y|s|Memory detection tool for c,cpp development.
 vim|tools|Y|s|enhanced vi, vim editor for Linux.
 vinagre|tools|Y|s|Vinagre is a VNC client for the GNOME desktop.
 virtualbox-6.0|tools|Y|c|Virtual Box open source alternative for VMWare virtualization machines.
+vivaldi-browser|tools|Y|c|Vivaldi browser for Linux [ safe option. No tracking and no adds ].
 vmware-workstation-prod|tools|Y|c|vmware workstation pro 15.5 installer for linux.Manage vm machine images.
 vscode-microsoft|tools|Y|c|microsoft visual code for development ide.
 vym|tools|Y|s|mindmap or freemind style software.
