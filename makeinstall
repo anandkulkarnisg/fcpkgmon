@@ -21,5 +21,17 @@ do
 	cp -r ./${installDir} ${installPath}
 done
 
-# Exit with grace.
-#exit 0
+# Auto generate the file list required by the rpm for the package spec file.
+fileList="/usr/local/bin/fcpkgmon /etc/fcpkgmonList.txt /etc/fcpkgmon.conf /usr/local/lib/fcpkgmonlib"
+outFile="/tmp/fcpkgmon.spec.fileList.txt"
+
+# cleanup the file first.
+rm -f $outFile
+
+for fileItem in $fileList
+do
+  echo -e $fileItem>>$outFile
+done
+
+# Add all the files to the above list which are in /opt/fcpkgmon/custom path.
+find /opt/fcpkgmon/custom|sort|uniq>>$outFile
