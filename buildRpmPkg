@@ -2,15 +2,22 @@
 # Author : Anand Kulkarni
 # Synopsis : This prepares the source tar.gz file for the building of the fedora package mon rpm build.It is required as input for the rpmbuild tool.
 
+function checkRoot()
+{
 runUser=$(id|awk '{print $1}'|awk -F"(" '{print $2}'|sed "s/)//g")
 if [ "$runUser" != "root" ]; then
 	echo -e "The package build and run should be managed only by root.Exiting with failure."
 	exit 1
 fi
+}
+
+# verify the user running.
+checkRoot
 
 # set up the initial config required.
+export pkgName="fcpkgmon"
 export GITHOME="/home/anand/"
-export sourceRepoPath="$GITHOME/git/fcpkgmon"
+export sourceRepoPath="$GITHOME/git/${pkgName}"
 export packageName=$(basename ${sourceRepoPath})
 export tarPkgName=$(echo $packageName".tar.gz")
 export curDir=$(pwd)
@@ -22,18 +29,18 @@ do
 	rm -f ${buildAreaItem}/${tarPkgName}
 	rm-rf ${buildAreaItem}/${packageName}
 	cd $GITHOME/git
-	tar -cvzf ${buildAreaItem}/${tarPkgName} fcpkgmon
+	tar -cvzf ${buildAreaItem}/${tarPkgName} --exclude .git ${pkgName}
 done
 
 # Now kick on the build of the rpm package.
-export rpmBuildLog="/tmp/fcpkgmon.rpmbuild.log"
-rpmbuild -ba $GITHOME/git/fcpkgmon/fcpkgmon.spec 2>&1 | tee -a ${rpmBuildLog}
+export rpmBuildLog="/tmp/${pkgName}.rpmbuild.log"
+rpmbuild -ba $GITHOME/git/${pkgName}/${pkgName}.spec 2>&1 | tee -a ${rpmBuildLog}
 
 # Copy the built rpm packages to the git repository [ ready for add/commit ].
 rpmPkgList=$(grep "Wrote:" ${rpmBuildLog}|tail -2|sed "s/Wrote: //g")
 for rpmPkg in ${rpmPkgList}
 do
-	cp ${rpmPkg} ${GITHOME}/git/fcpkgmon/rpms
+	cp ${rpmPkg} ${GITHOME}/git/${pkgName}/rpms
 done
 
 # Exit with grace.

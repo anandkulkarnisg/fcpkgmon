@@ -25,9 +25,6 @@ done
 fileList="/usr/local/bin/fcpkgmon /etc/fcpkgmonList.txt /etc/fcpkgmon.conf /usr/local/lib/fcpkgmonlib"
 outFile="/tmp/fcpkgmon.spec.fileList.txt"
 
-# cleanup the file first.
-rm -f $outFile
-
 for fileItem in $fileList
 do
   echo -e $fileItem>>$outFile

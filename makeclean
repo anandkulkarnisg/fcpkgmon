@@ -16,5 +16,9 @@ do
 	rm -rf ${dirItem}
 done
 
+# remove the rpm file list that is created by previous installation/build in /tmp area.
+outFile="/tmp/fcpkgmon.spec.fileList.txt"
+rm -f $outFile
+
 # Exit with grace.
 #exit 0
