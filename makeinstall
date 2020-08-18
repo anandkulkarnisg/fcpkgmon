@@ -31,4 +31,4 @@ do
 done
 
 # Add all the files to the above list which are in /opt/fcpkgmon/custom path.
-find /opt/fcpkgmon/custom|sort|uniq>>$outFile
+find /opt/fcpkgmon/custom -type f|sort|uniq>>$outFile

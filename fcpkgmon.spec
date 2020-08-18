@@ -18,7 +18,7 @@ BuildArch:noarch
 This is RPM Package for fedora custom package management tool.Its a wrapper around the dnf installer.It has additional custom installation script support.
 
 %prep
-rm -rf $RPM_BUILD_DIR/fcpkgmon
+rm -rf $RPM_BUILD_DIR/%{name}-${version}-${release}.${arch}
 tar -xzvf $RPM_BUILD_DIR/fcpkgmon.tar.gz
 
 %build
@@ -37,3 +37,4 @@ cp -R /opt/fcpkgmon/custom %{buildroot}/opt/fcpkgmon
 
 # Use the generated file list below for files section.
 %files -f /tmp/%{name}.spec.fileList.txt
+%dir /opt/fcpkgmon/custom

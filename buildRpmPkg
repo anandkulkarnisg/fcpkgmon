@@ -23,11 +23,11 @@ export tarPkgName=$(echo $packageName".tar.gz")
 export curDir=$(pwd)
 
 # Build the package.
-export destBuildAreaList="/root/rpmbuild/SOURCE /root/rpmbuild/BUILD"
+export destBuildAreaList="/root/rpmbuild/SOURCES /root/rpmbuild/BUILD"
 for buildAreaItem in ${destBuildAreaList}
 do
 	rm -f ${buildAreaItem}/${tarPkgName}
-	rm-rf ${buildAreaItem}/${packageName}
+	rm -rf ${buildAreaItem}/${packageName}
 	cd $GITHOME/git
 	tar -cvzf ${buildAreaItem}/${tarPkgName} --exclude .git ${pkgName}
 done

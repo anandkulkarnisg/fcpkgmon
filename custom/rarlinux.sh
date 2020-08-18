@@ -1,7 +1,5 @@
 #!/usr/bin/bash
 
-#!/bin/bash
-
 # Verfy if the installation is invoked properly via base/parent script of fcpkgmon.
 if [ ! -f ${customInstallPath}/set.sh ]; then
   echo -e "Invalid invocation. Run via fcpkgmon.Exiting with failure"
