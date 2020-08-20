@@ -24,12 +24,13 @@ export curDir=$(pwd)
 
 # Build the package.
 export destBuildAreaList="/root/rpmbuild/SOURCES /root/rpmbuild/BUILD"
+cd $GITHOME/git
+tar -cvzf /root/rpmbuild/${tarPkgName} --exclude .git ${pkgName}
 for buildAreaItem in ${destBuildAreaList}
 do
 	rm -f ${buildAreaItem}/${tarPkgName}
 	rm -rf ${buildAreaItem}/${packageName}
-	cd $GITHOME/git
-	tar -cvzf ${buildAreaItem}/${tarPkgName} --exclude .git ${pkgName}
+  cp /root/rpmbuild/${tarPkgName} ${buildAreaItem}
 done
 
 # Now kick on the build of the rpm package.
