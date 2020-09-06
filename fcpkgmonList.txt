@@ -135,6 +135,7 @@ gvim|tools|Y|s|gui vi tool for development.
 hplip-gui|tools|Y|s|ui for hp printer management.
 hplip|tools|Y|s|hp printer utility.
 hplip xsane sane|tools|Y|s|hp printer,scanner utility.
+htop|tools|Y|s|system top process info utility.
 ide-clion|tools|Y|c|jetbrains c++ ide editor.
 ide-intellij|tools|Y|c|jetbrains java ide editor.
 k3b|tools|Y|s|disk burning utility.
@@ -159,10 +160,12 @@ mediawiki|tools|Y|s|wiki management software.
 menulibre|tools|Y|s|create custom icons and app shortcuts for gnome desktop.
 mesa-libGLU.i686|tools|Y|s|Mesa implementation of the standard GLU OpenGL utility API 32 bit x86 arch.
 mesa-libGLU|tools|Y|s|Mesa implementation of the standard GLU OpenGL utility API.
+meson|tools|Y|s|meson build tool for linux projects [ Ex:- dbus-broker uses this ].
 mod_dav_svn|tools|Y|s|Required for apache based web servers.
 mod_ssl|tools|Y|s|required for authentication module for web server like httpd.
 mysql-server|tools|Y|s|ms sql server for Linux.
 mysql|tools|Y|s|mysql linux client.
+neofetch|tools|Y|s|neofetch terminal system info utility.
 ninja-build|tools|Y|s|ninja build for faster cmake builds used by Eclipse C++ CDT.
 p7zip|tools|Y|s|p7zip format for better compression.
 PackageKit-gtk3-module.i686|tools|Y|s|PackageKit is a system designed to make installing and updating software on your computer easier.
@@ -185,6 +188,7 @@ python-qt4|tools|Y|s|python qt interface for gui development.
 python-qt5|tools|Y|s|python qt interface for gui development.
 qbittorrent|tools|Y|s|A bit torrent client for linux.
 qt5-qtx11extras|tools|Y|s|The X11 Extras module provides features specific to platforms using X11, e.g. Linux and UNIX-like systems including embedded Linux systems that use the X Window System.
+Rambox|tools|Y|s|rambox utility for all in one service interface/ui.
 rclone-browser|tools|Y|c|rclone ui built custom rpm package from source [ one drive contains the rpm package ].
 rclone|tools|Y|s|rclone for managing cloud based drive for backup [ gdrive, onedrive ].
 roxterm|tools|Y|s|Terminal client.
