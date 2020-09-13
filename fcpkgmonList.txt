@@ -160,6 +160,7 @@ lsb|tools|Y|s|required by chrome browser for Linux.
 mailcap|tools|Y|s|The mailcap file is used by the metamail program.
 mariadb|tools|Y|s|Mariadb open source db.
 mediawiki|tools|Y|s|wiki management software.
+megasync|tools|Y|c|Mega cloud provider Linux Client.
 menulibre|tools|Y|s|create custom icons and app shortcuts for gnome desktop.
 mesa-libGLU.i686|tools|Y|s|Mesa implementation of the standard GLU OpenGL utility API 32 bit x86 arch.
 mesa-libGLU|tools|Y|s|Mesa implementation of the standard GLU OpenGL utility API.
@@ -194,6 +195,7 @@ qt5-qtx11extras|tools|Y|s|The X11 Extras module provides features specific to pl
 Rambox|tools|Y|s|rambox utility for all in one service interface/ui.
 rclone-browser|tools|Y|c|rclone ui built custom rpm package from source [ one drive contains the rpm package ].
 rclone|tools|Y|s|rclone for managing cloud based drive for backup [ gdrive, onedrive ].
+remmina|tools|Y|s|rdp client for Linux.
 roxterm|tools|Y|s|Terminal client.
 rpm-devel|tools|Y|s|This package should be installed if you want to develop programs that will manipulate RPM packages and databases.
 scons|tools|Y|s|Python related documentation processing tool.
