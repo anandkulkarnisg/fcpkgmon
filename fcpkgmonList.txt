@@ -204,6 +204,7 @@ screenfetch|tools|y|s|Fedora Logo and computer information in terminal.
 seahorse|tools|Y|s|Seahorse is a graphical interface for managing and using encryption keys.
 setroubleshoot|tools|Y|s|Application that allows you to view setroubleshoot-server messages.
 shellinabox|tools|Y|s|providing terminal access via browser.
+shotwell|tools|Y|s|shotwell photo manager for Linux.
 shutter|tools|Y|s|screenshot for kde.
 smartmontools|tools|Y|s|hard disk monitoring tools.
 spotify|tools|Y|c|Spotify Linux Music Client.
