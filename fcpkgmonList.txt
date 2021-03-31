@@ -63,6 +63,7 @@ xerces-c-devel|langs|Y|s|xerces-c for library deugging and development.
 xerces-c|langs|Y|s|xerces-c for c++ xml based library development.
 zlib.i686|langs|Y|s|zlib utility compression tool x32 compatiable library.
 zlib|langs|Y|s|zlib compression utility.
+audacity|multimedia|Y|c|cross-platform multitrack audio editor.
 avidemux|multimedia|Y|s|The video and audio multiplexer.
 bluejeans|multimedia|Y|c|bluejeans video/audio conferencing rpm required for facebook interview.
 brasero|multimedia|Y|s|brasero for cd/dvd buring.
