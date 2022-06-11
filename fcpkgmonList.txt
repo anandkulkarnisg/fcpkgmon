@@ -227,12 +227,14 @@ vivaldi-browser|tools|Y|c|Vivaldi browser for Linux [ safe option. No tracking a
 vmware-workstation-prod|tools|Y|c|vmware workstation pro 15.5 installer for linux.Manage vm machine images.
 vscode-microsoft|tools|Y|c|microsoft visual code for development ide.
 vym|tools|Y|s|mindmap or freemind style software.
+Webex|tools|Y|c|Cisco Webex Video conferencing.
 @xfce-desktop|tools|Y|s|xfce lightweight desktop for fedora.
 xpdf|tools|Y|s|An opensource pdf reader alternative.
 xsane|tools|Y|s|xsane scanner utility for fedora.
 xterm|tools|Y|s|Terminal thin client.
 yakuake|tools|Y|s|Terminal drop down style client.
 zlib-devel|tools|Y|s|zlib compression library development build for debugging.
+zoom|tools|Y|c|Zoom video conferencing.
 notepadplusplus|wine|Y|c|notepad++ tool for Linux.
 rarlinux|wine|Y|c|winrar linux command line utility software.
 rufus|wine|Y|c|Rufus useful utility for creating the bootable linux key for emergency purpose.
