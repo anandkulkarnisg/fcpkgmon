@@ -141,6 +141,7 @@ htop|tools|Y|s|system top process info utility.
 hwinfo|tools|Y|s|hwinfo is to probe for the hardware present in the system. It can be used to generate a system overview log which can be later used for support.
 ide-clion|tools|Y|c|jetbrains c++ ide editor.
 ide-intellij|tools|Y|c|jetbrains java ide editor.
+jami|tools|Y|c|Jami video and commuication chat opensource.
 jq|tools|Y|s|lightweight and flexible command-line JSON processor.
 k3b|tools|Y|s|disk burning utility.
 kate|tools|Y|s|kdb text editor.
