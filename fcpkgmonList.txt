@@ -146,6 +146,7 @@ jq|tools|Y|s|lightweight and flexible command-line JSON processor.
 k3b|tools|Y|s|disk burning utility.
 kate|tools|Y|s|kdb text editor.
 @kde-desktop|tools|Y|s|kdb desktop, an alternative to gnome desktop.
+kdevelop|tools|Y|s|kdevelop IDE environment.
 keepassx|tools|Y|s|keep passwords safe using this tool.aes encryption.
 kernel-headers|tools|Y|s|kernel headers for vmware workstation and kernel development.
 lhw|tools|Y|s|hw is a small tool to provide detailed informaton on the hardware configuration of the machine.
