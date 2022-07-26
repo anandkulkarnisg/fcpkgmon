@@ -169,6 +169,7 @@ menulibre|tools|Y|s|create custom icons and app shortcuts for gnome desktop.
 mesa-libGLU.i686|tools|Y|s|Mesa implementation of the standard GLU OpenGL utility API 32 bit x86 arch.
 mesa-libGLU|tools|Y|s|Mesa implementation of the standard GLU OpenGL utility API.
 meson|tools|Y|s|meson build tool for linux projects [ Ex:- dbus-broker uses this ].
+microsoft-teams|tools|Y|c|Microsoft teams app for Fedora Linux.
 mod_dav_svn|tools|Y|s|Required for apache based web servers.
 mod_ssl|tools|Y|s|required for authentication module for web server like httpd.
 mysql-server|tools|Y|s|ms sql server for Linux.
