@@ -212,6 +212,7 @@ shellinabox|tools|Y|s|providing terminal access via browser.
 shotwell|tools|Y|s|shotwell photo manager for Linux.
 shutter|tools|Y|s|screenshot for kde.
 smartmontools|tools|Y|s|hard disk monitoring tools.
+snapd|tools|Y|s|snap tool for installaing alertnate format packages for fedora.
 spotify|tools|Y|c|Spotify Linux Music Client.
 strace|tools|Y|s|Very useful tool for tracing system calls on running processes.
 sublime-text-editor|tools|Y|c|SubLime Text Editor for Fedora Linux Workstation
