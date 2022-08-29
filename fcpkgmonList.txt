@@ -26,6 +26,8 @@ java-openjdk|langs|Y|s|Install openjdk jvm implementation.
 julia|langs|Y|s|Julia programming language.
 kernel-devel|langs|Y|s|Kernel development module required for vmware workstation and few other apps.
 ksh|langs|Y|s|korn shell for Linux.
+libasan|langs|Y|c|address sanitizer related pkgs for c++,c work. 
+libasan-static|langs|Y|c|address sanitizer related pkgs for c++,c work.
 libgcc.i686|langs|Y|s|gcc libraries for x86 32 bit arch.
 libgcc|langs|Y|s|gcc c library implementation.
 libnsl.i686|langs|Y|s|Required for the 32 bit kdb/q binary.
