@@ -241,6 +241,7 @@ xsane|tools|Y|s|xsane scanner utility for fedora.
 xterm|tools|Y|s|Terminal thin client.
 yakuake|tools|Y|s|Terminal drop down style client.
 zlib-devel|tools|Y|s|zlib compression library development build for debugging.
+zoneminder|tools|Y|c|zoneminder for security and ip camera setup.
 zoom|tools|Y|c|Zoom video conferencing.
 notepadplusplus|wine|Y|c|notepad++ tool for Linux.
 rarlinux|wine|Y|c|winrar linux command line utility software.
