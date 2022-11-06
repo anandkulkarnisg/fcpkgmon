@@ -236,6 +236,7 @@ vscode-microsoft|tools|Y|c|microsoft visual code for development ide.
 vym|tools|Y|s|mindmap or freemind style software.
 Webex|tools|Y|c|Cisco Webex Video conferencing.
 @xfce-desktop|tools|Y|s|xfce lightweight desktop for fedora.
+xorg-x11-resutils|tools|Y|s|xterm utilities appres etc.
 xpdf|tools|Y|s|An opensource pdf reader alternative.
 xsane|tools|Y|s|xsane scanner utility for fedora.
 xterm|tools|Y|s|Terminal thin client.
